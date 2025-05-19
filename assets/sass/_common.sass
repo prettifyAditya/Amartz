@@ -388,6 +388,22 @@ img
             // background: linear-gradient(270deg, #FFFFFF, #B9B9B9)
             background: linear-gradient(270deg, #FFFFFF, #ffffff)
             color: #000
+    &.black
+        background: $black
+        color: $white
+        path 
+            fill: $white
+        &:hover
+            background: var(--primary)
+    &.gray-border
+        border: 1px solid $text
+        color: $text
+        font-weight: 500
+        background-color: $white
+        &:hover
+            border-color: var(--primary)
+            color: $white
+            background: var(--primary)
     &.white
         border-color: $white
         background: $white

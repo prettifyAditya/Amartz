@@ -579,6 +579,35 @@ $(function () {
             }
         }
     });
+    new Swiper('.related-slider', {
+        loop: true,
+        navigation: {
+            prevEl: '.related-prev',
+            nextEl: '.related-next',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+                speed: 500,
+            },
+            540: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                speed: 700,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                speed: 700,
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                speed: 700,
+            }
+        }
+    });
 
     });
 

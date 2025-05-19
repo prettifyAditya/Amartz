@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing | Amartz</title>
+    <title>Product Details | Amartz</title>
     <link rel="icon" type="image/png" href="assets/icon/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/icon/favicon/favicon.svg" />
     <link rel="shortcut icon" href="assets/icon/favicon/favicon.ico" />
@@ -13,6 +13,8 @@
         integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- +++++++++++++++++++++ Fancybox ++++++++++++++++++ -->
+    <link rel="stylesheet" href="/assets/css/fancybox.css" />
     <link rel="stylesheet" href="assets/sass/header/header.css">
     <link rel="stylesheet" href="assets/sass/product/product.css">
     <script type="text/javascript" src="assets/js/function.js"></script>
@@ -227,386 +229,250 @@
         </div>
     </header>
     <main>
-        <div class="banner proListing_banner mt-hdrfxd">
-            <div class="bg">
-                <video src="/assets/video/proListing_banner.mp4" autoplay muted loop playsinline></video>
-                <div class="banner-wrapper">
-                    <div class="container">
-                        <div class="heading">
-                            <h2>Instant Food</h2>
-                            <p>Enjoy a delicious blend of nutrition, flavor, and variety all in one bite!</p>
+        <div class="product-detail-container">
+            <div class="container">
+                <div class="breadcrumps">
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="javascript:;">Products</a></li>
+                    <li><a href="javascript:;">Frozen Food</a></li>
+                    <li><a href="javascript:;" class="active">Masala Fish Tikka</a></li>
+                </div>
+                <div class="detail-product-wrap">
+                    <div class="colA">
+                        <div class="pro_preview_wrap">
+                            <figure class="pro_preview_img">
+                                <a href="/assets/images/product-detail/pro_details1.jpg" data-fancybox="gallery1">
+                                    <img src="/assets/images/product-detail/pro_details1.jpg" alt="">
+                                </a>
+                            </figure>
+                            <div class="pro_preview_grid">
+                                <button type="button" class="active preview_btn" data-img="/assets/images/product-slider/product1.jpg"><img src="/assets/images/product-detail/pro_details1.jpg" alt=""></button>
+                                <button type="button" class="preview_btn" data-img="/assets/images/product-slider/product2.jpg"><img src="/assets/images/product-detail/pro_details1.jpg" alt=""></button>
+                                <button type="button" class="preview_btn" data-img="/assets/images/product-slider/product3.jpg"><img src="/assets/images/product-detail/pro_details1.jpg" alt=""></button>
+                                <button type="button" class="preview_btn" data-img="/assets/images/product-slider/product4.jpg"><img src="/assets/images/product-detail/pro_details1.jpg" alt=""></button>
+                                <button type="button" class="preview_btn" data-img="/assets/images/product-slider/product1.jpg"><img src="/assets/images/product-detail/pro_details1.jpg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colB">
+                        <div class="pro_title">
+                            <h6>Masala Fish Tikka</h6>
+                            <p>Healthy Soft & Juicy</p>
+                        </div>
+                        <div class="pro_quant">
+                            <div class="pro_quant_det">
+                                <div class="pro_details">
+                                    <img src="/assets/icon/weight.svg" class="svg" alt="">
+                                    <p>200 Gms</p>
+                                </div>
+                                <div class="pro_details">
+                                    <img src="/assets/icon/cutlery.svg" class="svg" alt="">
+                                    <p>7-8 PCS</p>
+                                </div>
+                                <div class="pro_details">
+                                    <img src="/assets/icon/barcode.svg" class="svg" alt="">
+                                    <p>SKU : 2202102</p>
+                                </div>
+                            </div>
+                            <div class="pro_tag">
+                                <img src="/assets/icon/non-veg.svg" alt="">
+                            </div>
+                        </div>  
+                        <div class="pro_desc">
+                            <p>Fish Tikka is a flavourful Indian dish made with marinated fish chunks, seasoned with spices, and grilled or baked to perfection. Each piece is infused with smoky, aromatic flavours, delivering a juicy, spicy, and tender bite. It’s a popular appetizer or main course, often enjoyed with mint chutney and lemon wedges.</p>
+                        </div>
+                        <div class="pro_price">
+                            <p class="sp">₹ 895</p>
+                            <p class="mrp">₹1299</p>
+                            <p class="disct">(80% OFF)</p>
+                            <div class="value_wrap">
+                                <input type="button" value="-" class="minus-val">
+                                <input type="text" name="" value="1" id="txtTotalQuantity" class="count-val">
+                                <input type="button" value="+" class="plus-val">
+                            </div>
+                        </div>
+                        <div class="pro_btns">
+                            <a href="" class="btn">Buy Now</a>
+                            <a href="" class="btn black">Add to Cart</a>
+                            <a href="" class="btn gray-border">Whatsapp</a>
+                        </div>
+                        <div class="add_info">
+                            <h6>Nutritional Information</h6>
+                            <ul>
+                                <li>Total Energy: 127 Kcal</li>
+                                <li>Carbohydrate: 0 g</li>
+                                <li>Fat: 4.5 g</li>
+                                <li>Protein: 21.6 g</li>
+                            </ul>
+                        </div>
+                        <div class="col-itqeq">
+                            <div class="rgcwv">
+                                <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none" class="svg">
+        <g clip-path="url(#clip0_98_125)">
+        <path d="M0.166748 6.5625V8.75H20.948V25.1562H14.2149C13.7271 23.2761 12.0361 21.875 10.0105 21.875C7.98487 21.875 6.29394 23.2761 5.80612 25.1562H4.54175V19.6875H2.35425V27.3438H5.80612C6.29394 29.2239 7.98487 30.625 10.0105 30.625C12.0361 30.625 13.7271 29.2239 14.2149 27.3438H23.3061C23.7939 29.2239 25.4849 30.625 27.5105 30.625C29.5361 30.625 31.2271 29.2239 31.7149 27.3438H35.1667V18.4231L35.0978 18.2514L32.9103 11.6889L32.673 10.9375H23.1355V6.5625H0.166748ZM1.2605 10.9375V13.125H11.1042V10.9375H1.2605ZM23.1355 13.125H31.0991L32.9792 18.7305V25.1562H31.7149C31.2271 23.2761 29.5361 21.875 27.5105 21.875C25.4849 21.875 23.7939 23.2761 23.3061 25.1562H23.1355V13.125ZM2.35425 15.3125V17.5H8.91675V15.3125H2.35425ZM10.0105 24.0625C11.2322 24.0625 12.198 25.0283 12.198 26.25C12.198 27.4717 11.2322 28.4375 10.0105 28.4375C8.78878 28.4375 7.823 27.4717 7.823 26.25C7.823 25.0283 8.78878 24.0625 10.0105 24.0625ZM27.5105 24.0625C28.7322 24.0625 29.698 25.0283 29.698 26.25C29.698 27.4717 28.7322 28.4375 27.5105 28.4375C26.2888 28.4375 25.323 27.4717 25.323 26.25C25.323 25.0283 26.2888 24.0625 27.5105 24.0625Z" fill="#FF5500"></path>
+        </g>
+        <defs>
+        <clipPath id="clip0_98_125">
+        <rect width="35" height="35" fill="white" transform="translate(0.166748)"></rect>
+        </clipPath>
+        </defs>
+        </svg></div>
+                                <p>Free shipping in india</p>
+                            </div>
+                            <div class="rgcwv">
+                                <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none" class="svg">
+        <path d="M3.41675 16.0416L7.51029 11.4377C8.05757 10.8218 8.7291 10.3288 9.48067 9.99125C10.2322 9.65368 11.0468 9.47913 11.8707 9.47913H12.1667M3.41675 28.4375H11.4376L17.2709 24.0625C17.2709 24.0625 18.4522 23.2648 20.1876 21.875C23.8334 18.9583 20.1876 14.3412 16.5417 16.7708C13.5726 18.7498 10.7084 20.4166 10.7084 20.4166" stroke="#FF5500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12.1667 19.6875V10.2083C12.1667 9.43474 12.474 8.69288 13.021 8.1459C13.568 7.59892 14.3099 7.29163 15.0834 7.29163H29.6667C30.4403 7.29163 31.1822 7.59892 31.7291 8.1459C32.2761 8.69288 32.5834 9.43474 32.5834 10.2083V18.9583C32.5834 19.7318 32.2761 20.4737 31.7291 21.0207C31.1822 21.5677 30.4403 21.875 29.6667 21.875H20.1876" stroke="#FF5500" stroke-width="1.5"></path>
+        <path d="M28.9375 14.5979L28.9521 14.5818M15.8125 14.5979L15.8271 14.5818M22.375 17.5C21.6015 17.5 20.8596 17.1927 20.3126 16.6457C19.7656 16.0987 19.4583 15.3568 19.4583 14.5833C19.4583 13.8097 19.7656 13.0679 20.3126 12.5209C20.8596 11.9739 21.6015 11.6666 22.375 11.6666C23.1485 11.6666 23.8904 11.9739 24.4374 12.5209C24.9844 13.0679 25.2917 13.8097 25.2917 14.5833C25.2917 15.3568 24.9844 16.0987 24.4374 16.6457C23.8904 17.1927 23.1485 17.5 22.375 17.5Z" stroke="#FF5500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></div>
+                                <p>COD - Cash on delivery</p>
+                            </div>
+                            <div class="rgcwv">
+                                <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none" class="svg">
+        <path d="M27.2126 27.1687C25.3355 28.8929 22.9971 30.0334 20.4828 30.4507C17.9684 30.8681 15.3869 30.5443 13.0535 29.519C10.7201 28.4937 8.73569 26.8112 7.34258 24.6768C5.94946 22.5425 5.20793 20.0487 5.2085 17.4999H7.396C7.39584 19.703 8.06095 21.8547 9.30425 23.6734C10.5475 25.492 12.311 26.8929 14.3639 27.6924C16.4167 28.492 18.6631 28.653 20.8089 28.1544C22.9548 27.6558 24.9001 26.5208 26.3901 24.8981H23.2116C22.9215 24.8981 22.6433 24.7828 22.4382 24.5777C22.2331 24.3726 22.1179 24.0944 22.1179 23.8043C22.1179 23.5142 22.2331 23.236 22.4382 23.0309C22.6433 22.8258 22.9215 22.7106 23.2116 22.7106H28.3063C28.5964 22.7106 28.8746 22.8258 29.0797 23.0309C29.2848 23.236 29.4001 23.5142 29.4001 23.8043V28.8946C29.4001 29.1847 29.2848 29.4629 29.0797 29.668C28.8746 29.8732 28.5964 29.9884 28.3063 29.9884C28.0162 29.9884 27.738 29.8732 27.5329 29.668C27.3278 29.4629 27.2126 29.1847 27.2126 28.8946V27.1665V27.1687ZM10.2769 10.104H13.4554C13.7455 10.104 14.0237 10.2192 14.2288 10.4244C14.4339 10.6295 14.5491 10.9077 14.5491 11.1978C14.5491 11.4878 14.4339 11.766 14.2288 11.9712C14.0237 12.1763 13.7455 12.2915 13.4554 12.2915H8.3585C8.06842 12.2915 7.79022 12.1763 7.5851 11.9712C7.37998 11.766 7.26475 11.4878 7.26475 11.1978V6.10307C7.26475 5.81299 7.37998 5.53479 7.5851 5.32968C7.79022 5.12456 8.06842 5.00932 8.3585 5.00932C8.64858 5.00932 8.92678 5.12456 9.13189 5.32968C9.33701 5.53479 9.45225 5.81299 9.45225 6.10307V7.8312C11.329 6.10483 13.6681 4.96256 16.1835 4.54399C18.6989 4.12543 21.2818 4.44868 23.6165 5.47426C25.9512 6.49984 27.9366 8.18332 29.3301 10.319C30.7235 12.4546 31.4646 14.9499 31.4629 17.4999H29.2754C29.2756 15.2966 28.6103 13.1446 27.3667 11.3258C26.1232 9.50695 24.3593 8.1061 22.3061 7.30672C20.2529 6.50733 18.0061 6.34669 15.8601 6.84582C13.7141 7.34496 11.7688 8.48061 10.2791 10.104H10.2769Z" fill="#FF5500"></path>
+        </svg></div>
+                                <p>Easy returns &amp; exchange</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section>
-            <div class="product_listingA sec-pad">
-                <div class="container main_wrapper flex">
-                    <div class="colA">
-                        <div class="filter_option_wrapper">
-                            <div class="title_head flex">
-                                <h6>Filters</h6>
-                                <button type="button" class="clear_all_btn">Clear all</button>
-                            </div>
-                            <div class="filter_options">
-                                <div class="col">
-                                    <div class="title">
-                                        <h6>Instant Food</h6>
-                                        <div class="icon"></div>
-                                    </div>
-                                    <article hidden>
-                                        <div class="scroll">
-                                            <ul>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Noodles</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Pasta Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Curry & Gravy Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Soups</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Oatmeal</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Waffle Mix</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Frozen Pizza</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                        </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col">
-                                    <div class="title">
-                                        <h6>Frozen Food</h6>
-                                        <div class="icon"></div>
-                                    </div>
-                                    <article hidden>
-                                        <ul>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Noodles</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Pasta Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Curry & Gravy Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Soups</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Oatmeal</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Waffle Mix</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Frozen Pizza</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                        </ul>
-                                    </article>
-                                </div>
-                                <div class="col">
-                                    <div class="title">
-                                        <h6>Frozato</h6>
-                                        <div class="icon"></div>
-                                    </div>
-                                    <article hidden>
-                                        <ul>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Noodles</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Pasta Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Curry & Gravy Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Soups</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Oatmeal</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Waffle Mix</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Frozen Pizza</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                        </ul>
-                                    </article>
-                                </div>
-                                <div class="col">
-                                    <div class="title">
-                                        <h6>Biscuits</h6>
-                                        <div class="icon"></div>
-                                    </div>
-                                    <article hidden>
-                                        <ul>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Noodles</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Pasta Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Curry & Gravy Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Soups</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Oatmeal</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Waffle Mix</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Frozen Pizza</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                        </ul>
-                                    </article>
-                                </div>
-                                <div class="col">
-                                    <div class="title">
-                                        <h6>Dry Fruits</h6>
-                                        <div class="icon"></div>
-                                    </div>
-                                    <article hidden>
-                                        <ul>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Noodles</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Pasta Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Curry & Gravy Meals</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Soups</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Instant Oatmeal</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Waffle Mix</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                            <li>
-                                                <div class="chk_box"></div>
-                                                <span>Frozen Pizza</span>
-                                                <input type="checkbox" name="" id="">
-                                            </li>
-                                        </ul>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
+        <div class="related-sec sec-pad">
+            <div class="container">
+                <div class="heading">
+                    <h2>You May Also Like</h2>
+                </div>
+                <div class="related_wrapper">
+                    <div class="swiper-nav">
+                        <button type="button" class="swiper-prev related-prev">
+                            <img src="/assets/icon/swiper_btn.svg" class="svg" alt="">
+                        </button>
+                        <button type="button" class="swiper-next related-next">
+                            <img src="/assets/icon/swiper_btn.svg" class="svg" alt="">
+                        </button>
                     </div>
-                    <div class="colB">
-                        <div class="upper_sec">
-                            <div class="total_pro_count">
-                                <p>205 Products</p>
+                    <div class="related-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="item swiper-slide">
+                                <div class="product-col">
+                                    <figure>
+                                        <img src="/assets/images/product-slider/product1.jpg" alt="">
+                                    </figure>
+                                    <figcaption>
+                                        <h6>Fish Nuggets</h6>
+                                        <div class="flex">
+                                            <div class="quant">200 Gms</div>
+                                            <div class="piece">7-9 PCS</div>
+                                        </div>
+                                        <div class="price_wrapper">
+                                            <p class="price">₹599</p>
+                                            <p class="mrp">₹1299</p>
+                                            <p class="disct">(80% OFF)</p>
+                                        </div>
+                                    </figcaption>
+                                </div>
                             </div>
-                            <div class="sort_by_wrapper">
-                                <select name="" id="">
-                                    <option value="" selected>Sort By</option>
-                                    <option value="">A to Z</option>
-                                    <option value="">Z to A</option>
-                                    <option value="">Low to High</option>
-                                    <option value="">High to Low</option>
-                                </select>
+                            <div class="item swiper-slide">
+                                <div class="product-col">
+                                    <figure>
+                                        <img src="/assets/images/product-slider/product1.jpg" alt="">
+                                    </figure>
+                                    <figcaption>
+                                        <h6>Fish Nuggets</h6>
+                                        <div class="flex">
+                                            <div class="quant">200 Gms</div>
+                                            <div class="piece">7-9 PCS</div>
+                                        </div>
+                                        <div class="price_wrapper">
+                                            <p class="price">₹599</p>
+                                            <p class="mrp">₹1299</p>
+                                            <p class="disct">(80% OFF)</p>
+                                        </div>
+                                    </figcaption>
+                                </div>
                             </div>
-                        </div>
-                        <div class="lower_sec product_wrapper">
-                            <div class="product-col">
-                                <figure>
-                                    <img src="/assets/images/product-slider/product1.jpg" alt="">
-                                </figure>
-                                <figcaption>
-                                    <h6>Fish Nuggets</h6>
-                                    <div class="flex">
-                                        <div class="quant">200 Gms</div>
-                                        <div class="piece">7-9 PCS</div>
-                                    </div>
-                                    <div class="price_wrapper">
-                                        <p class="price">₹599</p>
-                                        <p class="mrp">₹1299</p>
-                                        <p class="disct">(80% OFF)</p>
-                                    </div>
-                                </figcaption>
+                            <div class="item swiper-slide">
+                                <div class="product-col">
+                                    <figure>
+                                        <img src="/assets/images/product-slider/product1.jpg" alt="">
+                                    </figure>
+                                    <figcaption>
+                                        <h6>Fish Nuggets</h6>
+                                        <div class="flex">
+                                            <div class="quant">200 Gms</div>
+                                            <div class="piece">7-9 PCS</div>
+                                        </div>
+                                        <div class="price_wrapper">
+                                            <p class="price">₹599</p>
+                                            <p class="mrp">₹1299</p>
+                                            <p class="disct">(80% OFF)</p>
+                                        </div>
+                                    </figcaption>
+                                </div>
                             </div>
-                            <div class="product-col">
-                                <figure>
-                                    <img src="/assets/images/product-slider/product1.jpg" alt="">
-                                </figure>
-                                <figcaption>
-                                    <h6>Fish Nuggets</h6>
-                                    <div class="flex">
-                                        <div class="quant">200 Gms</div>
-                                        <div class="piece">7-9 PCS</div>
-                                    </div>
-                                    <div class="price_wrapper">
-                                        <p class="price">₹599</p>
-                                        <p class="mrp">₹1299</p>
-                                        <p class="disct">(80% OFF)</p>
-                                    </div>
-                                </figcaption>
+                            <div class="item swiper-slide">
+                                <div class="product-col">
+                                    <figure>
+                                        <img src="/assets/images/product-slider/product1.jpg" alt="">
+                                    </figure>
+                                    <figcaption>
+                                        <h6>Fish Nuggets</h6>
+                                        <div class="flex">
+                                            <div class="quant">200 Gms</div>
+                                            <div class="piece">7-9 PCS</div>
+                                        </div>
+                                        <div class="price_wrapper">
+                                            <p class="price">₹599</p>
+                                            <p class="mrp">₹1299</p>
+                                            <p class="disct">(80% OFF)</p>
+                                        </div>
+                                    </figcaption>
+                                </div>
                             </div>
-                            <div class="product-col">
-                                <figure>
-                                    <img src="/assets/images/product-slider/product1.jpg" alt="">
-                                </figure>
-                                <figcaption>
-                                    <h6>Fish Nuggets</h6>
-                                    <div class="flex">
-                                        <div class="quant">200 Gms</div>
-                                        <div class="piece">7-9 PCS</div>
-                                    </div>
-                                    <div class="price_wrapper">
-                                        <p class="price">₹599</p>
-                                        <p class="mrp">₹1299</p>
-                                        <p class="disct">(80% OFF)</p>
-                                    </div>
-                                </figcaption>
+                            <div class="item swiper-slide">
+                                <div class="product-col">
+                                    <figure>
+                                        <img src="/assets/images/product-slider/product1.jpg" alt="">
+                                    </figure>
+                                    <figcaption>
+                                        <h6>Fish Nuggets</h6>
+                                        <div class="flex">
+                                            <div class="quant">200 Gms</div>
+                                            <div class="piece">7-9 PCS</div>
+                                        </div>
+                                        <div class="price_wrapper">
+                                            <p class="price">₹599</p>
+                                            <p class="mrp">₹1299</p>
+                                            <p class="disct">(80% OFF)</p>
+                                        </div>
+                                    </figcaption>
+                                </div>
                             </div>
-                            <div class="product-col">
-                                <figure>
-                                    <img src="/assets/images/product-slider/product1.jpg" alt="">
-                                </figure>
-                                <figcaption>
-                                    <h6>Fish Nuggets</h6>
-                                    <div class="flex">
-                                        <div class="quant">200 Gms</div>
-                                        <div class="piece">7-9 PCS</div>
-                                    </div>
-                                    <div class="price_wrapper">
-                                        <p class="price">₹599</p>
-                                        <p class="mrp">₹1299</p>
-                                        <p class="disct">(80% OFF)</p>
-                                    </div>
-                                </figcaption>
+                            <div class="item swiper-slide">
+                                <div class="product-col">
+                                    <figure>
+                                        <img src="/assets/images/product-slider/product1.jpg" alt="">
+                                    </figure>
+                                    <figcaption>
+                                        <h6>Fish Nuggets</h6>
+                                        <div class="flex">
+                                            <div class="quant">200 Gms</div>
+                                            <div class="piece">7-9 PCS</div>
+                                        </div>
+                                        <div class="price_wrapper">
+                                            <p class="price">₹599</p>
+                                            <p class="mrp">₹1299</p>
+                                            <p class="disct">(80% OFF)</p>
+                                        </div>
+                                    </figcaption>
+                                </div>
                             </div>
-                            <div class="product-col">
-                                <figure>
-                                    <img src="/assets/images/product-slider/product1.jpg" alt="">
-                                </figure>
-                                <figcaption>
-                                    <h6>Fish Nuggets</h6>
-                                    <div class="flex">
-                                        <div class="quant">200 Gms</div>
-                                        <div class="piece">7-9 PCS</div>
-                                    </div>
-                                    <div class="price_wrapper">
-                                        <p class="price">₹599</p>
-                                        <p class="mrp">₹1299</p>
-                                        <p class="disct">(80% OFF)</p>
-                                    </div>
-                                </figcaption>
-                            </div>
-                            <div class="product-col">
-                                <figure>
-                                    <img src="/assets/images/product-slider/product1.jpg" alt="">
-                                </figure>
-                                <figcaption>
-                                    <h6>Fish Nuggets</h6>
-                                    <div class="flex">
-                                        <div class="quant">200 Gms</div>
-                                        <div class="piece">7-9 PCS</div>
-                                    </div>
-                                    <div class="price_wrapper">
-                                        <p class="price">₹599</p>
-                                        <p class="mrp">₹1299</p>
-                                        <p class="disct">(80% OFF)</p>
-                                    </div>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="btn_wrap text-center">
-                            <img src="/assets/images/favicon.svg" class="svg" alt="">
-                            <button type="button" class="load_btn">Load More...</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <video playsinline autoplay muted loop class="footer-bg">
@@ -832,6 +698,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"
         integrity="sha512-771ZvVCYr4EfUGXr63AcX7thw7EKa6QE1fhxi8JG7mPacB/arC0cyvYPXKUkCrX2sYKnnFCZby3ZZik42jOuSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/assets/js/fancybox.js"></script>
     <script type="text/javascript" src="assets/js/animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
         integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
@@ -880,7 +747,71 @@
             $searchBtn.removeClass('close-search-btn');
             $searchWrap.removeClass('search_wrap_active')
         })
+
+
+        // ++++++++++++++++++ Main Photo Preview +++++++++++++++++++++
+        // console.log($('.preview_btn').attr('data-img'));
+        $('.preview_btn').click(function() {
+            let img = $(this).data('img'); 
+            $('.pro_preview_img img').attr('src', img);
+            $('.pro_preview_img a').attr('href', img);
+            $(this).addClass('active').siblings().removeClass('active')
+        });
+        
+        
         })
+    </script>
+    <script>
+        $(document).ready(function() {
+        $(".value_wrap").each(function() {
+            var $wrap = $(this);
+            var $minus = $wrap.find(".minus-val");
+            var $plus = $wrap.find(".plus-val");
+            var $input = $wrap.find(".count-val");
+            function updateButtons() {
+                var value = parseInt($input.val(), 10);
+                $minus.toggleClass("disabled", value <= 0);
+                $plus.toggleClass("disabled", value >= 10);
+            }
+            $minus.on("click", function() {
+                var value = parseInt($input.val(), 10);
+                if (value > 0) {
+                    $input.val(value - 1);
+                    updateButtons();
+                }
+            });
+
+            $plus.on("click", function() {
+                var value = parseInt($input.val(), 10);
+                if (value < 10) {
+                    $input.val(value + 1);
+                    updateButtons();
+                }
+            });
+
+            updateButtons(); // Initial check on page load
+            Fancybox.bind("[data-fancybox]", {
+            autoStart: false,
+            contentClick: "iterateZoom",
+            Images: {
+                Panzoom: {
+                    maxScale: 3,
+                },
+            },
+            keyboard: true,
+            Thumbs: false,
+            Toolbar: {
+                display: {
+                    left: [""],
+                    middle: [""],
+                    right: ["close"],
+                    bottom: [],
+                },
+            },
+        });
+        });
+    })
+        
     </script>
 </body>
 </html>
