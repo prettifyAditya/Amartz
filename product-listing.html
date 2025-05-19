@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing | Amartz</title>
+    <link rel="icon" type="image/png" href="assets/icon/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/icon/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/icon/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/icon/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/sass/header/header.css">
+    <link rel="stylesheet" href="assets/sass/product/product.css">
+    <script type="text/javascript" src="assets/js/function.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="upper-container">
+                <div class="colA">
+                    <div class="logo">
+                        <a href="/"><img src="assets/images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="colB">
+                    <div class="search_wrapper">
+                        <div class="search_wrap">
+                            <div class="search_input_wrap">
+                                <input type="text" name="search" class="search_input" placeholder="Search Products" id="">
+                                <button type="button" class="search_btn">
+                                    <img src="/assets/icon/search-white.svg" class="search-open-img" alt="">
+                                    <img src="/assets/icon/close-white.svg" style="display: none;" class="search-close-img" alt="">
+                                </button>
+                            </div>
+                            <div class="search_dropdown_menu">
+                                <div class="dropdown_wrap">
+                                    <div class="dropdown_data">
+                                        <a href="javascript:;" class="searched_pro">
+                                            <img src="/assets/images/products/product1.png" alt="">
+                                            <div class="info">
+                                                <p class="pro_name">Fish</p>
+                                                <p class="pro_price">
+                                                    <span>$70</span>
+                                                    $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="searched_pro">
+                                            <img src="/assets/images/products/product1.png" alt="">
+                                            <div class="info">
+                                                <p class="pro_name">Fish</p>
+                                                <p class="pro_price">
+                                                    <span>$70</span>
+                                                    $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="searched_pro">
+                                            <img src="/assets/images/products/product1.png" alt="">
+                                            <div class="info">
+                                                <p class="pro_name">Fish</p>
+                                                <p class="pro_price">
+                                                    <span>$70</span>
+                                                    $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="searched_pro">
+                                            <img src="/assets/images/products/product1.png" alt="">
+                                            <div class="info">
+                                                <p class="pro_name">Fish</p>
+                                                <p class="pro_price">
+                                                    <span>$70</span>
+                                                    $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:;" class="searched_pro">
+                                            <img src="/assets/images/products/product1.png" alt="">
+                                            <div class="info">
+                                                <p class="pro_name">Fish</p>
+                                                <p class="pro_price">
+                                                    <span>$70</span>
+                                                    $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colC">  
+                    <ul>
+                        <li>
+                            <a href="tel:+919182652963"><img src="/assets/icon/call-black.svg" class="svg" alt=""> + 91 - 9182652963</a>
+                        </li>
+                        <li class="my-account">
+                            <a href="javascript:;" class="sm-block" data-model=".login-pop">
+                                <img src="assets/icon/user-white.svg" class="svg" alt="">
+                            </a>
+                            <a href="javascript:;" class="sm-none" data-model=".login-pop">
+                                Login/ Sign up
+                            </a>
+                            <div class="my-acnt-dropdown">
+                                <ul>
+                                    <li><a href="index.html">My account</a></li>
+                                    <li><a href="index.html">log Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><img src="assets/icon/like.svg" width="24" height="24" class="svg" alt=""></a>
+                            <span class="dot-noti">5</span>
+                        </li>
+                        <li><a href=""><img src="assets/icon/cart.svg" width="24" height="24" class="svg" alt=""></a>
+                            <span class="dot-noti">2</span>
+                        </li>
+                        <li class="sm-block"><button type="button" class="ham-btn" data-model=".ham-pop">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lower-container">
+                <ul>
+                    <li class="hasDropdown des-menu">
+                        <a href="javascript:;"><img src="/assets/icon/category.svg" class="svg" alt="">Categories</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-wrap">
+                                <div class="flex">
+                                    <div class="colA-md">
+                                        <ul class="subcat-ul">
+                                            <li class="subcat-li active" data-img="https://www.prettifycreative.com/BackEndImage/PortfolioImage/shin-ya.jpg">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Instant Food</a>
+                                                <div class="col-sub-menu">
+                                                    <ul class="subsubcat-ul">
+                                                        <li class="subsubcat-li">
+                                                            <a href="javascript:;" class="subsubcat-li-anchr">Instant Food</a>
+                                                        </li>
+                                                        <li class="subsubcat-li">
+                                                            <a href="javascript:;" class="subsubcat-li-anchr">⁠Frozen Food</a>
+                                                        </li>
+                                                        <li class="subsubcat-li">
+                                                            <a href="javascript:;" class="subsubcat-li-anchr">Frozato</a>
+                                                        </li>
+                                                        <li class="subsubcat-li">
+                                                            <a href="javascript:;" class="subsubcat-li-anchr">Biscuits</a>
+                                                        </li>
+                                                        <li class="subsubcat-li">
+                                                            <a href="javascript:;" class="subsubcat-li-anchr">Dry Fruits</a>
+                                                        </li>
+                                                        <li class="subsubcat-li">
+                                                            <a href="javascript:;" class="subsubcat-li-anchr">Breakfast Essentials</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="subcat-li" data-img="assets/images/collection/collect1.jpg">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠Frozen Food</a>
+                                            </li>
+                                            <li class="subcat-li" data-img="assets/images/collection/collect2.jpg">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Frozato</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Biscuits</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Dry Fruits</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Breakfast Essentials</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠Instant Noodles</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Mocktails</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Chips and Mixtures</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠International Chocolates</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> International Beverages</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Chocolates</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Beverages</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠Ice Creams</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠Dairy Products</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> Healthy Snacks</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠Dips and Sauces</a>
+                                            </li>
+                                            <li class="subcat-li">
+                                                <a href="" class="subcat-li-anchr"><img src="/assets/images/products/product1.png" alt=""> ⁠Podi and Chutney</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>25 % off Use  coupon code #AMARTZ25</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner proListing_banner mt-hdrfxd">
+            <div class="bg">
+                <video src="/assets/video/proListing_banner.mp4" autoplay muted loop playsinline></video>
+                <div class="banner-wrapper">
+                    <div class="container">
+                        <div class="heading">
+                            <h2>Instant Food</h2>
+                            <p>Enjoy a delicious blend of nutrition, flavor, and variety all in one bite!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="product_listingA sec-pad">
+                <div class="container main_wrapper flex">
+                    <div class="colA">
+                        <div class="filter_option_wrapper">
+                            <div class="title_head flex">
+                                <h6>Filters</h6>
+                                <button type="button" class="clear_all_btn">Clear all</button>
+                            </div>
+                            <div class="filter_options">
+                                <div class="col">
+                                    <div class="title">
+                                        <h6>Instant Food</h6>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <article hidden>
+                                        <ul>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Instant Noodles</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Pasta Meals</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Curry & Gravy Meals</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Instant Soups</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Instant Oatmeal</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Waffle Mix</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                            <li>
+                                                <div class="chk_box"></div>
+                                                <span>Frozen Pizza</span>
+                                                <input type="checkbox" name="" id="">
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colB">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <video playsinline autoplay muted loop class="footer-bg">
+            <source src="assets/video/footer-bg.mp4">
+        </video>
+        <div class="content">
+            <div class="upper-footer">
+                <div class="flex">
+                    <div class="colA">
+                        <img src="assets/images/logo-light.svg" alt="">
+                    </div>
+                    <div class="colB">
+                        <ul>
+                            <li><a href="javascript:;">About Amartz</a></li>
+                            <li><a href="javascript:;">Products</a></li>
+                            <li><a href="javascript:;">Contact Us</a></li>
+                            <li><a href="javascript:;">Return Policy</a></li>
+                            <li><a href="javascript:;">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <div class="flex">
+                    <div class="colA col">
+                        <h5>Amartz Foods and Beverages</h5>
+                        <a href="javascript:;">10-3-547 K.K Heights Ground Floor, Opp SBI Bank, Vijay Nagar Colony</a>
+                    </div>
+                    <div class="colB col">
+                        <h5>Phone</h5>
+                        <a href="tel:+919182652963">+91- 9182652963</a>
+                        <h5>Email</h5>
+                        <a href="mailto:info@amartz.in">info@amartz.in</a>
+                    </div>
+                    <div class="colC col social-icons">
+                        <h5>Connect Us</h5>
+                        <ul>
+                            <li><a href=""><img src="assets/icon/twitter.svg" alt=""></a></li>
+                            <li><a href=""><img src="assets/icon/facebook.svg" alt=""></a></li>
+                            <li><a href=""><img src="assets/icon/instagram.svg" alt=""></a></li>
+                            <li><a href=""><img src="assets/icon/linkedin.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tag">
+                <p>© Amartz. All rights reserved.<a href="https://www.prettifycreative.com" target="_blank"> Made by passion  <img src="https://noir.hellopci.com/assets/icon/prettify-light.svg" alt="Made-by-passion"></a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <!--Hamburger Menu -->
+    <div class="model ham-pop">
+        <button class="close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 0.5L25.5 25.5M0.5 25.5L25.5 0.5" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+        <div class="model-body">
+            <div class="icon">
+                <img src="assets/icon/fav.svg" class="svg" alt="">
+            </div>
+            <ul class="nav-list"> 
+                <li class="hasDropdown">
+                    <div class="title">
+                        <h5>Men's Category</h5>
+                        <img src="assets/icon/drop-right.svg" alt="" class="svg arrow">
+                    </div>
+                    <div class="dropdown-menu-ham">
+                        <ul>
+                            <li><a href="">Elite Wallet</a></li>
+                            <li><a href="">Luxury Belt</a></li>
+                            <li><a href="">Leather Gloves</a></li>
+                            <li><a href="">Prestige Duffle Bag</a></li>
+                            <li><a href="">AirPods Case</a></li>
+                            <li><a href="">iPhone & iPad Sleeves</a></li>
+                            <li><a href="">Wireless Charging Pad</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hasDropdown">
+                    <div class="title">
+                        <h5>Women's Category</h5>
+                        <img src="assets/icon/drop-right.svg" alt="" class="svg arrow">
+                    </div>
+                    <div class="dropdown-menu-ham">
+                        <ul>
+                            <li><a href="">Elite Wallet</a></li>
+                            <li><a href="">Luxury Belt</a></li>
+                            <li><a href="">Leather Gloves</a></li>
+                            <li><a href="">Prestige Duffle Bag</a></li>
+                            <li><a href="">AirPods Case</a></li>
+                            <li><a href="">iPhone & iPad Sleeves</a></li>
+                            <li><a href="">Wireless Charging Pad</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hasDropdown">
+                    <div class="title">
+                        <h5>Travel Category</h5>
+                        <img src="assets/icon/drop-right.svg" alt="" class="svg arrow">
+                    </div>
+                    <div class="dropdown-menu-ham">
+                        <ul>
+                            <li><a href="">Elite Wallet</a></li>
+                            <li><a href="">Luxury Belt</a></li>
+                            <li><a href="">Leather Gloves</a></li>
+                            <li><a href="">Prestige Duffle Bag</a></li>
+                            <li><a href="">AirPods Case</a></li>
+                            <li><a href="">iPhone & iPad Sleeves</a></li>
+                            <li><a href="">Wireless Charging Pad</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hasDropdown">
+                    <div class="title">
+                        <h5>Unisex Category</h5>
+                        <img src="assets/icon/drop-right.svg" alt="" class="svg arrow">
+                    </div>
+                    <div class="dropdown-menu-ham">
+                        <ul>
+                            <li><a href="">Elite Wallet</a></li>
+                            <li><a href="">Luxury Belt</a></li>
+                            <li><a href="">Leather Gloves</a></li>
+                            <li><a href="">Prestige Duffle Bag</a></li>
+                            <li><a href="">AirPods Case</a></li>
+                            <li><a href="">iPhone & iPad Sleeves</a></li>
+                            <li><a href="">Wireless Charging Pad</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="bottom-list">
+                <div class="social-icons">
+                    <a href="" title="Facebook"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z"
+                                fill="#666666"></path>
+                        </svg> </a>
+                    <a href="" title="X"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.325 1.03088H20.6989L13.3289 9.47574L22 20.9692H15.2114L9.89057 13.9999L3.80914 20.9692H0.432143L8.31443 11.9335L0 1.03246H6.96143L11.7637 7.40146L17.325 1.03088ZM16.1386 18.9452H18.0086L5.94 2.9496H3.93486L16.1386 18.9452Z"
+                                fill="#666666"></path>
+                        </svg> </a>
+                    <a href="" title="Instagram"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.34 5.46C17.1027 5.46 16.8707 5.53038 16.6733 5.66224C16.476 5.79409 16.3222 5.98151 16.2313 6.20078C16.1405 6.42005 16.1168 6.66133 16.1631 6.89411C16.2094 7.12689 16.3236 7.34071 16.4915 7.50853C16.6593 7.67635 16.8731 7.79064 17.1059 7.83694C17.3387 7.88324 17.5799 7.85948 17.7992 7.76866C18.0185 7.67783 18.2059 7.52402 18.3378 7.32668C18.4696 7.12935 18.54 6.89734 18.54 6.66C18.54 6.34174 18.4136 6.03652 18.1885 5.81147C17.9635 5.58643 17.6583 5.46 17.34 5.46ZM21.94 7.88C21.9206 7.0503 21.7652 6.2294 21.48 5.45C21.2257 4.78313 20.83 4.17928 20.32 3.68C19.8248 3.16743 19.2196 2.77418 18.55 2.53C17.7727 2.23616 16.9508 2.07721 16.12 2.06C15.06 2 14.72 2 12 2C9.28 2 8.94 2 7.88 2.06C7.04915 2.07721 6.22734 2.23616 5.45 2.53C4.78168 2.77665 4.17693 3.16956 3.68 3.68C3.16743 4.17518 2.77418 4.78044 2.53 5.45C2.23616 6.22734 2.07721 7.04915 2.06 7.88C2 8.94 2 9.28 2 12C2 14.72 2 15.06 2.06 16.12C2.07721 16.9508 2.23616 17.7727 2.53 18.55C2.77418 19.2196 3.16743 19.8248 3.68 20.32C4.17693 20.8304 4.78168 21.2234 5.45 21.47C6.22734 21.7638 7.04915 21.9228 7.88 21.94C8.94 22 9.28 22 12 22C14.72 22 15.06 22 16.12 21.94C16.9508 21.9228 17.7727 21.7638 18.55 21.47C19.2196 21.2258 19.8248 20.8326 20.32 20.32C20.8322 19.8226 21.2283 19.2182 21.48 18.55C21.7652 17.7706 21.9206 16.9497 21.94 16.12C21.94 15.06 22 14.72 22 12C22 9.28 22 8.94 21.94 7.88ZM20.14 16C20.1327 16.6348 20.0178 17.2637 19.8 17.86C19.6403 18.2952 19.3839 18.6884 19.05 19.01C18.7256 19.3405 18.3332 19.5964 17.9 19.76C17.3037 19.9778 16.6748 20.0927 16.04 20.1C15.04 20.15 14.67 20.16 12.04 20.16C9.41 20.16 9.04 20.16 8.04 20.1C7.38089 20.1123 6.72459 20.0109 6.1 19.8C5.68578 19.6281 5.31136 19.3728 5 19.05C4.66809 18.7287 4.41484 18.3352 4.26 17.9C4.01586 17.2952 3.88044 16.6519 3.86 16C3.86 15 3.8 14.63 3.8 12C3.8 9.37 3.8 9 3.86 8C3.86448 7.35106 3.98295 6.70795 4.21 6.1C4.38605 5.67791 4.65627 5.30166 5 5C5.30381 4.65617 5.67929 4.3831 6.1 4.2C6.70955 3.98004 7.352 3.86508 8 3.86C9 3.86 9.37 3.8 12 3.8C14.63 3.8 15 3.8 16 3.86C16.6348 3.86728 17.2637 3.98225 17.86 4.2C18.3144 4.36865 18.7223 4.64285 19.05 5C19.3777 5.30718 19.6338 5.68273 19.8 6.1C20.0223 6.70893 20.1373 7.35178 20.14 8C20.19 9 20.2 9.37 20.2 12C20.2 14.63 20.19 15 20.14 16ZM12 6.87C10.9858 6.87198 9.99496 7.17453 9.15265 7.73942C8.31035 8.30431 7.65438 9.1062 7.26763 10.0438C6.88089 10.9813 6.78072 12.0125 6.97979 13.0069C7.17886 14.0014 7.66824 14.9145 8.38608 15.631C9.10392 16.3474 10.018 16.835 11.0129 17.0321C12.0077 17.2293 13.0387 17.1271 13.9755 16.7385C14.9123 16.35 15.7129 15.6924 16.2761 14.849C16.8394 14.0056 17.14 13.0142 17.14 12C17.1413 11.3251 17.0092 10.6566 16.7512 10.033C16.4933 9.40931 16.1146 8.84281 15.6369 8.36605C15.1592 7.88929 14.5919 7.51168 13.9678 7.25493C13.3436 6.99818 12.6749 6.86736 12 6.87ZM12 15.33C11.3414 15.33 10.6976 15.1347 10.15 14.7688C9.60234 14.4029 9.17552 13.8828 8.92348 13.2743C8.67144 12.6659 8.6055 11.9963 8.73398 11.3503C8.86247 10.7044 9.17963 10.111 9.64533 9.64533C10.111 9.17963 10.7044 8.86247 11.3503 8.73398C11.9963 8.6055 12.6659 8.67144 13.2743 8.92348C13.8828 9.17552 14.4029 9.60234 14.7688 10.15C15.1347 10.6976 15.33 11.3414 15.33 12C15.33 12.4373 15.2439 12.8703 15.0765 13.2743C14.9092 13.6784 14.6639 14.0454 14.3547 14.3547C14.0454 14.6639 13.6784 14.9092 13.2743 15.0765C12.8703 15.2439 12.4373 15.33 12 15.33Z"
+                                fill="#666666"></path>
+                        </svg> </a>
+                    <a href="" title="LinkedIn"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.94 5.00002C6.93974 5.53046 6.72877 6.03906 6.35351 6.41394C5.97825 6.78883 5.46944 6.99929 4.939 6.99902C4.40857 6.99876 3.89997 6.78779 3.52508 6.41253C3.1502 6.03727 2.93974 5.52846 2.94 4.99802C2.94027 4.46759 3.15124 3.95899 3.5265 3.5841C3.90176 3.20922 4.41057 2.99876 4.941 2.99902C5.47144 2.99929 5.98004 3.21026 6.35492 3.58552C6.72981 3.96078 6.94027 4.46959 6.94 5.00002ZM7 8.48002H3V21H7V8.48002ZM13.32 8.48002H9.34V21H13.28V14.43C13.28 10.77 18.05 10.43 18.05 14.43V21H22V13.07C22 6.90002 14.94 7.13002 13.28 10.16L13.32 8.48002Z"
+                                fill="#666666"></path>
+                        </svg> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hamburger Menu -->
+    <div class="model login-pop">
+        <button class="close" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.75 0.75L23.25 23.25M0.75 23.25L23.25 0.75" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="model-body" id="loginForm">
+            <div class="title">
+                <div class="ico"><img src="assets/icon/fav.svg" class="svg" alt=""></div>
+                <h4>LOGIN or SIGNUP</h4>
+            </div>
+            <form action="#" class="form" onsubmit="validateForm()">
+                <div class="form-group-login">
+                    <!-- <div class="dial-code call-qwzv"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 28 28"><path fill="#752776" d="m7.85 2.703l1.937-.584a2.75 2.75 0 0 1 3.301 1.506l1.358 3.02a2.75 2.75 0 0 1-.633 3.14l-2.067 1.926c-.277.263-.067 1.288.945 3.042c1.013 1.755 1.796 2.449 2.157 2.341l2.708-.828a2.75 2.75 0 0 1 3.034 1.02l1.93 2.675a2.75 2.75 0 0 1-.339 3.606l-1.492 1.413a3.75 3.75 0 0 1-3.676.863c-3.126-.957-6.021-3.797-8.724-8.48C5.58 12.673 4.557 8.717 5.27 5.485a3.75 3.75 0 0 1 2.58-2.782"/></svg></div> -->
+                    <div class="dial-code email-qwzv" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#752776" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></div>
+                    <label for="mobile">+91 </label>
+                    <input type="text" name="mobile" id="emailOrMobile" placeholder="Mobile Number/Email" class="mobile-input">
+                    <p class="wefeewf">Invalid</p>
+                </div>
+                <div class="sbmt-btn-div"><button type="button" class="btn btn2">CONTINUE</button></div>
+            </form>
+            <div class="split-sec">
+                <p>OR</p>
+            </div>
+            <div class="btm-social-wrp">
+                <a href="" class="btn primary-border google-btn">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.7919 8.24996H9.15023V10.525H14.5752C14.3002 13.7 11.6586 15.0583 9.15856 15.0583C5.96689 15.0583 3.16689 12.5416 3.16689 8.99996C3.16689 5.58329 5.83356 2.94163 9.16689 2.94163C11.7419 2.94163 13.2502 4.58329 13.2502 4.58329L14.8336 2.93329C14.8336 2.93329 12.8002 0.666626 9.08356 0.666626C4.35023 0.666626 0.691895 4.66663 0.691895 8.99996C0.691895 13.2083 4.13356 17.3333 9.20856 17.3333C13.6669 17.3333 16.9169 14.275 16.9169 9.75829C16.9169 8.79996 16.7919 8.24996 16.7919 8.24996Z" fill="#752776"/></svg>
+                    Google
+                </a>
+                <a href="" class="btn primary-border facebook-btn">
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.16683 10.25H8.25016L9.0835 6.91663H6.16683V5.24996C6.16683 4.39163 6.16683 3.58329 7.8335 3.58329H9.0835V0.783293C8.81183 0.747459 7.786 0.666626 6.70266 0.666626C4.44016 0.666626 2.8335 2.04746 2.8335 4.58329V6.91663H0.333496V10.25H2.8335V17.3333H6.16683V10.25Z" fill="#752776"/></svg>    
+                    Facebook
+                </a>
+            </div>
+        </div>
+        <div class="model-body otp-verify" style="display: none;">
+            <button class="back-to-login" type="button">
+                <img src="assets/icon/arrow-down-primary.svg" alt=""> Back
+            </button>
+            <form class="otp-verify-wrap">
+                <p class="txtVr">Please enter the OTP sent to <span id="emailOrMobileValue">+91 8938220334</span></p>
+                <div class="cojm-wrap">
+                    <div class="otpInput">
+                        <input type="text" maxlength="1">
+                        <input type="text" maxlength="1">
+                        <input type="text" maxlength="1">
+                        <input type="text" maxlength="1">
+                    </div>
+                    <p class="otp-error-ozrj">The OTP entered is incorrect!</p>
+                </div>
+                <div class="verify-button">
+                    <a class="verify-otp btn btn2" href="dashboard.html">Verify Otp</a>
+                </div>
+                <p class="register">Not recieved your code? <a class="reg-btn" href=""> Resend Code</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"
+        integrity="sha512-771ZvVCYr4EfUGXr63AcX7thw7EKa6QE1fhxi8JG7mPacB/arC0cyvYPXKUkCrX2sYKnnFCZby3ZZik42jOuSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $(function() {
+            $searchWrap = $('.search_wrap')
+            $searchInput = $('.search_input')
+            $searchDropdown = $('.search_dropdown_menu')
+            $searchBtn = $('.search_btn')
+            $searchOpenImg = $('.search-open-img')
+            $searchCloseImg = $('.search-close-img')
+            
+
+        $searchInput.on('input', function(){
+            if($(this).val() != ''){ 
+                $searchDropdown.slideDown();
+                $searchDropdown.addClass('is-open');
+                $searchOpenImg.hide();
+                $searchCloseImg.show();
+                $searchBtn.addClass('close-search-btn');
+            }
+            else{
+                $searchDropdown.stop().slideUp();
+                $searchDropdown.removeClass('is-open');
+                $searchOpenImg.show();
+                $searchCloseImg.hide();
+                $searchBtn.removeClass('close-search-btn');
+            }
+        })
+        $searchInput.on('click', function(){
+            $searchWrap.addClass('search_wrap_active')
+        })
+        $searchInput.on('blur', function(){
+            if($(this).val() == ''){
+                $searchWrap.removeClass('search_wrap_active')
+            }
+        })
+        $(document).on('click', '.close-search-btn', function(){
+            $searchInput.val('');
+            $searchDropdown.stop().slideUp();
+            $searchDropdown.removeClass('is-open');
+            $searchCloseImg.hide();
+            $searchOpenImg.show();
+            $searchBtn.removeClass('close-search-btn');
+            $searchWrap.removeClass('search_wrap_active')
+        })
+        })
+    </script>
+</body>
+</html>

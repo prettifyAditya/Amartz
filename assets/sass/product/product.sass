@@ -1,0 +1,95 @@
+@import '../_var'
+@import '../_form'
+
+.proListing_banner 
+    .bg
+        height: 60vh
+        .banner-wrapper
+            .heading
+                text-align: center
+                h2
+                    font-size: 36px
+                    font-weight: 600
+                    line-height: 1.2
+                    color: $white
+                p
+                    max-width: 350px
+                    margin: 0 auto
+                    font-weight: 300
+                    color: $white
+                   
+.product_listingA
+    .main_wrapper
+        gap: 10px
+        .colA
+            flex: 0 1 30%
+            .filter_option_wrapper
+                border-radius: 10px
+                border: 1px solid #D9D9D9
+                box-shadow: 0 1px 4px 0 #00000040
+                .title_head
+                    justify-content: space-between
+                    padding: 10px 20px
+                    background: var(--primary)
+                    border-radius: 10px 10px 0 0 
+                    h6
+                        font-size: 20px
+                        font-weight: 700
+                    .clear_all_btn
+                        font-size: 14px
+                        font-weight: 400
+                        color: $white
+                .filter_options
+                    .col
+                        &.active
+                            .title
+                                h6
+                                    color: var(--primary)
+                                .icon
+                                    --bgcolor: var(--primary)
+                                    &::after
+                                        transform: scale(0)
+                        .title
+                            padding: 10px 20px
+                            border-bottom: 1px solid #D9D9D9
+                            display: flex
+                            align-items: center
+                            h6
+                                flex: 1
+                                font-size: 16px
+                                font-weight: 500
+                                color: $black
+                            .icon
+                                flex: 0 1 auto
+                                --size: 18px
+                                --border: 2px
+                                --bgcolor: var(--black)
+                                height: var(--size)
+                                width: var(--size)
+                                position: relative
+                                &::before, &::after
+                                    content: ""
+                                    position: absolute
+                                    left: 0
+                                    right: 0
+                                    z-index: 0 
+                                    transition: .5s ease
+                                    background: var(--bgcolor)
+                                &::after
+                                    left: calc( var(--size) / 2  )
+                                    translate: -50% 0
+                                    right: auto
+                                    width: var(--border)
+                                    height: 100%
+                                &::before
+                                    top: calc( var(--size) / 2 - var(--border) / 2 )
+                                    bottom: auto
+                                    height: var(--border)
+                                    width: 100%
+
+                        article
+                            ul
+                                li:not(:last-child)
+                                    padding: 5px 20px
+                                    
+                                    
