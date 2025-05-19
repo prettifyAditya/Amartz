@@ -2333,6 +2333,10 @@ em {
     transform: rotate(10deg);
   }
 }
+.over-hidden {
+  overflow: hidden;
+}
+
 header {
   position: fixed;
   background-color: var(--white);
