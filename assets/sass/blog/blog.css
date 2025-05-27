@@ -44,11 +44,10 @@
 
 .blog-listing-secA .content h1 {
   display: inline-block;
-  font-size: 60px;
-  line-height: normal;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
   color: var(--black);
-  text-transform: uppercase;
-  letter-spacing: 4px;
 }
 @media only screen and (max-width: 767px) {
   .blog-listing-secA .content h1 {
@@ -118,12 +117,14 @@
 .banner.blog-detail-banner .content p {
   font-size: 14px;
   margin-bottom: 20px;
+  color: var(--white);
 }
 .banner.blog-detail-banner .content h1 {
   font-size: 40px;
   line-height: 1.1;
   text-transform: initial;
   letter-spacing: 0;
+  color: var(--white);
 }
 @media only screen and (max-width: 991px) {
   .banner.blog-detail-banner .content h1 {
@@ -227,6 +228,6 @@
 
 .blog-detail-secB .heading h3 {
   color: var(--black);
-  font-size: 30px;
-  letter-spacing: 5px;
+  font-size: 36px;
+  font-weight: 500;
 }/*# sourceMappingURL=blog.css.map */

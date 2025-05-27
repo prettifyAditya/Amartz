@@ -13,8 +13,8 @@ $scrollwidth: 8px
 :root
     --headerpadding: 15px
     --headerheight: 135px
-    --headerfixed: 100px
-    --homecatstrip: 80px
+    --headerfixed: 120px
+    --homecatstrip: 80px 
     --homecatstripfixed: 70px
     --mobilesearchbar: 45px
     --footerstrip: 38px
@@ -79,11 +79,12 @@ $scrollwidth: 8px
 body
     &::-webkit-scrollbar
         width: $scrollwidth
-        background: $black
+        background: $white
     &::-webkit-scrollbar-track
         box-shadow: none
     &::-webkit-scrollbar-thumb
-        background-color: #ccc
+        background-color: var(--primary)
+        border-radius: 10px
     @include media(540)
         -webkit-tap-highlight-color: transparent
     &.overflow-hidden
@@ -127,7 +128,7 @@ svg
     margin: 0 auto
 h1,h2,h3,h4,h5,h6
     font-weight: normal
-    color: #fff
+    color: #000
 h1
     font-size: 48px
     line-height: 1.17
@@ -150,8 +151,6 @@ h3
     h3
         font-size: 20px
         line-height: 1.282
-        letter-spacing: 0.2em
-        text-transform: uppercase
     &.h-large
         h3,h2
             font-size: 36px
@@ -161,6 +160,7 @@ h3
     >p
         margin-top: 10px
         color: $text
+        font-weight: 400
 
 .head
     font-family: $Rubik
@@ -515,7 +515,7 @@ img
 .swiper-slide
     height: auto
 
-.swiper-nav
+.swiper-nav, .slider-nav
     line-height: 0
     &.center-full
         position: absolute
@@ -546,6 +546,13 @@ img
             svg
                 width: auto
                 height: auto
+    button
+        width: 45px
+        height: 45px
+        border: 2px solid var(--primary)
+        border-radius: 50%
+        svg
+            vertical-align: middle
 .swiper-next
     svg,img
         transform: scaleX(-1)
@@ -686,19 +693,18 @@ img
             padding-right: 0
     .upper-sec
         position: relative
-        margin-bottom: 5rem
-        @include media(768)
-            margin-bottom: 3rem
+        margin-bottom: 3rem
         @include media(540)
             margin-bottom: 2.5rem
         .slider-nav
             position: absolute
             bottom: 0
             right: 0
+            display: flex
+            align-items: center
+            gap: 10px
             @include media(768)
                 display: none
-            .swiper-prev
-                margin-right: 22px
         .heading
             text-align: center
 
@@ -744,6 +750,7 @@ img
 
 .product-col
     position: relative
+    overflow: hidden
     @include shine()
     .figure,figure
         display: block
@@ -752,44 +759,31 @@ img
         position: relative
         border-top-right-radius: 15px
         border-top-left-radius: 15px
-        .add-to
+        .call_to_action
             width: 100%
             position: absolute
-            right: 0
             bottom: 0
-            text-align: right
+            transform: translateY(100%)
+            text-align: center
             display: flex
             align-items: center
-            justify-content: end
-            opacity: 0
+            justify-content: center
             transition: .5s ease
             a
                 display: block
-                padding: 11px 20px
-                transition: .5s ease
-                svg
-                    width: 25px
-                    height: 25px
-                    vertical-align: middle
-                &.add2cart
-                    background-color: #13195F
-                    &:hover
-                        background-color: #fff
-                        svg
-                            path 
-                                fill: var(--primary)
-                &.add2wish
-                    background-color: #030735
-                    &.active
-                        background-color: #fff
-                        svg
-                            path 
-                                fill: var(--primary)
-                    &:hover
-                        background-color: #fff
-                        svg
-                            path 
-                                stroke: var(--primary)
+                text-align: center
+                flex: 1
+                padding: 20px 10px
+                background-color: var(--primary)
+                color: $white 
+                &.viewDetails
+                    border-right: 1px solid #ffffff3f
+                    background-color: $white
+                    color: var(--primary)
+                &:hover
+                    background-color: $black
+                    color: $white
+            
         img
             width: 100%
             object-position: cover
@@ -837,9 +831,29 @@ img
                 line-height: 1.5
                 font-weight: 500
                 color: $black
+    .wishlist
+        position: absolute
+        top: 4%
+        right: 5%
+        transform: translateX(4vw)
+        width: 30px
+        height: 30px
+        transition: .5s ease
+        &.added
+            svg
+                path 
+                    fill: var(--primary)
+        button
+            width: 100%
+            height: 100%
+            img, svg
+                width: 100%
+                height: 100%
     &:hover
-        .add-to
-            opacity: 1
+        .wishlist
+            transform: translateX(0)
+        .call_to_action
+            transform: translateY(0)
         .figure,figure
             img
                 transform: scale(1.1)
@@ -1203,6 +1217,11 @@ img
 
 .green-color
     color: $green !important
+    svg
+        rect 
+            stroke: var(--green)
+        path 
+            fill: var(--green)
 .red-color
     color: $red !important
 .orange-color
@@ -1213,6 +1232,8 @@ em
 
 .mt-hdrfxd
     margin-top: var(--headerfixed)
+.mt-hdr
+    margin-top: var(--headerheight)
 
 .w-full
     width: 100%
@@ -1259,6 +1280,10 @@ em
             font-size: 18px
             padding-top: 20px
 
+.wiggle
+    animation: wiggle 2s ease-in-out infinite
+    transform-origin: center
+
 @keyframes wiggle
     0%
         transform: rotate(10deg)
@@ -1269,3 +1294,6 @@ em
 
 .over-hidden
     overflow: hidden
+
+.border-5
+    border-radius: 5px

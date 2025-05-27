@@ -261,9 +261,25 @@
                         </div>
                         <div class="pro_quant" data-animate="zoom-in">
                             <div class="pro_quant_det">
-                                <div class="pro_details">
-                                    <img src="/assets/icon/weight.svg" class="svg" alt="">
-                                    <p>200 Gms</p>
+                                <div class="pro_details has_dropdown">
+                                        <img src="/assets/icon/weight.svg" class="svg" alt="">
+                                        <p class="currentQuant">200 Gms</p>
+                                    <div class="menu-dropdown">
+                                        <ul>
+                                            <li>
+                                                100 Gms
+                                            </li>
+                                            <li>
+                                               250 Gms
+                                            </li>
+                                            <li>
+                                               500 Gms
+                                            </li>
+                                            <li>
+                                                200 Gms
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="pro_details">
                                     <img src="/assets/icon/cutlery.svg" class="svg" alt="">
@@ -275,10 +291,10 @@
                                 </div>
                             </div>
                             <div class="pro_tag">
-                                <img src="/assets/icon/non-veg.svg" alt="">
+                                <img src="/assets/icon/non-veg.svg" class="svg" alt="">
                             </div>
                         </div>  
-                        <div class="pro_desc" data-animate="fade-down">
+                        <div class="pro_desc">
                             <p>Fish Tikka is a flavourful Indian dish made with marinated fish chunks, seasoned with spices, and grilled or baked to perfection. Each piece is infused with smoky, aromatic flavours, delivering a juicy, spicy, and tender bite. It’s a popular appetizer or main course, often enjoyed with mint chutney and lemon wedges.</p>
                         </div>
                         <div class="pro_price" data-animate="fade-up">
@@ -706,49 +722,6 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
         $(function() {
-            $searchWrap = $('.search_wrap')
-            $searchInput = $('.search_input')
-            $searchDropdown = $('.search_dropdown_menu')
-            $searchBtn = $('.search_btn')
-            $searchOpenImg = $('.search-open-img')
-            $searchCloseImg = $('.search-close-img')
-            
-
-        $searchInput.on('input', function(){
-            if($(this).val() != ''){ 
-                $searchDropdown.slideDown();
-                $searchDropdown.addClass('is-open');
-                $searchOpenImg.hide();
-                $searchCloseImg.show();
-                $searchBtn.addClass('close-search-btn');
-            }
-            else{
-                $searchDropdown.stop().slideUp();
-                $searchDropdown.removeClass('is-open');
-                $searchOpenImg.show();
-                $searchCloseImg.hide();
-                $searchBtn.removeClass('close-search-btn');
-            }
-        })
-        $searchInput.on('click', function(){
-            $searchWrap.addClass('search_wrap_active')
-        })
-        $searchInput.on('blur', function(){
-            if($(this).val() == ''){
-                $searchWrap.removeClass('search_wrap_active')
-            }
-        })
-        $(document).on('click', '.close-search-btn', function(){
-            $searchInput.val('');
-            $searchDropdown.stop().slideUp();
-            $searchDropdown.removeClass('is-open');
-            $searchCloseImg.hide();
-            $searchOpenImg.show();
-            $searchBtn.removeClass('close-search-btn');
-            $searchWrap.removeClass('search_wrap_active')
-        })
-
-
         // ++++++++++++++++++ Main Photo Preview +++++++++++++++++++++
         // console.log($('.preview_btn').attr('data-img'));
         $('.preview_btn').click(function() {
@@ -758,6 +731,16 @@
             $(this).addClass('active').siblings().removeClass('active')
         });
         
+        let currentQuant = $('.currentQuant')
+        let menuItem = $('.menu-dropdown li')
+        menuItem.click(function() {
+            let selectedQuant = $(this).text()
+            currentQuant.text(selectedQuant)
+            
+        })
+        $('.has_dropdown').click(function() {
+            $(this).toggleClass('active')
+        })
         
         })
     </script>

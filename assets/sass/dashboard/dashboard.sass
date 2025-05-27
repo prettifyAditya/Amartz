@@ -14,16 +14,16 @@
         .aside-left
             flex: 0 1 30%
             max-width: 30%
-            width: 100%
+            width: 100% 
             background: #F1F1F1
             border-radius: 5px
             @include after
             &::after
-                background: url(../../images/vector/vector-1-small.svg) no-repeat
-                background-size: 100% auto
-                background-position: 0 100%
+                background: url(/assets/images/fav.png) no-repeat
+                background-size: 50% auto
+                background-position: 50% 90%
                 z-index: 0
-                opacity: .18
+                opacity: 0.7
             @include media(540)
                 flex: 1
                 max-width: 100%
@@ -83,6 +83,64 @@
             @include media(540)
                 margin-left: 0
                 margin-top: 40px
+            .wallet_wrapper
+                padding: 20px
+                border: 1px solid #CDCBCB
+                border-radius: 5px
+                .upper_bar
+                    display: flex
+                    justify-content: space-between
+                    .form-title
+                        font-size: 24px
+                        font-weight: 500
+                    .avail_bal
+                        display: flex
+                        .icon, .bal
+                            flex: 0 1 auto
+                        .icon
+                            padding-right: 10px
+                            border-right: 1px solid #00000045
+                        .bal
+                            padding-left: 10px
+                            p
+                                font-size: 14px
+                                color: $text
+                                font-weight: 400
+                            span
+                                font-size: 16px
+                                color: $black
+                                font-weight: 500
+                .bottom_bar
+                    display: flex
+                    align-items: center
+                    justify-content: center    
+                    height: 100%
+                    padding: 70px 0 90px
+                    .content
+                        text-align: center 
+                        width: 300px
+                        .icon
+                            padding-bottom: 20px
+                        .form
+                            display: flex
+                            align-items: center
+                            gap: 10px 
+                            margin-bottom: 20px   
+                            border: 1px solid #D0D0D0
+                            border-radius: 5px
+                            padding: 5px   
+                            .rupee
+                                padding-right: 5px  
+                                border-right: 1px solid #00000024
+                                svg
+                                    vertical-align: middle
+                                    width: 25px
+                                    height: 25px  
+                            .form-group 
+                                &::before
+                                    display: none
+                                --inputsize: 32px         
+
             .aside-right-wrap
                 .form-title
                     margin-bottom: 47px
@@ -90,8 +148,8 @@
                     color: $black
                     font-size: 20px
                     line-height: 22px
-                    letter-spacing: 0.15em
-                    text-transform: uppercase
+                    font-weight: 500
+                    text-transform: capitalize
                     @include media(768)
                         margin-bottom: 30px
                     @include media(540)
@@ -108,6 +166,28 @@
                             text-align: center
                         .btn
                             --padding: 54px
+                    .points_wrap 
+                        background-color: #EDEDED
+                        border-radius: 5px
+                        padding: 15px 
+                        gap: 10px
+                        width: fit-content
+                        .icon
+                            flex: 0 1 auto
+                        .point
+                            flex: 1
+                            h6
+                                font-size: 14px
+                                span
+                                    font-weight: 600
+                            p
+                                font-size: 14px
+                                color: $text
+                                padding-bottom: 5px
+                            a
+                                --height: 28px
+                                --padding: 14px 
+                                font-size: 14px
             .dznjn-wrap
                 .dznjn
                     .bkd-htl-crd
@@ -137,6 +217,7 @@
                                     line-height: 1.5
                                     transition: inherit
                                     color: $black
+                                    font-weight: 500
                                 .rm-dt
                                     font-size: 14px
                                     line-height: 18px
@@ -243,7 +324,7 @@
                                 margin: 1rem auto 3rem
                                 ul
                                     display: flex
-                                    gap: 68px
+                                    gap: 50px
                                     --color: #c6c6c6
                                     --dot: 13px
                                     --line: 164px
@@ -479,13 +560,17 @@
                         position: relative
                 .rkuj-col
                     position: relative
+                    border: 1px solid #EDEAEA
+                    padding: 15px
+                    border-radius: 5px
                     a
                         &:has(img)
                             line-height: 0
                         img
                             width: 100%
                             object-fit: contain
-                    figcaption
+                            border-radius: 5px
+                    figcaption 
                         padding-top: 18px
                         text-align: center
                         .prdt-nm

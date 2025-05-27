@@ -15,6 +15,7 @@
 .checkout-header {
   padding: 20px 0;
   border-bottom: 1px solid #F1F1F1;
+  background-color: #F3F3F3;
 }
 .checkout-header .checkout-header-wrapper {
   display: flex;
@@ -78,7 +79,7 @@
   text-align: center;
   color: var(--text);
   text-transform: uppercase;
-  background: var(--white);
+  background: #F3F3F3;
 }
 @media only screen and (max-width: 768px) {
   .checkout-header .checkout-header-wrapper .colB ul li a {
@@ -93,7 +94,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ECECEC;
+  background: #CDCDCD;
 }
 @media only screen and (max-width: 768px) {
   .checkout-header .checkout-header-wrapper .colB ul li a .ico {
@@ -113,6 +114,9 @@
   font-size: 14px;
   line-height: 17.22px;
   letter-spacing: 0.15em;
+}
+.checkout-header .checkout-header-wrapper .colC .secure-kaedj svg path {
+  stroke: var(--primary);
 }
 
 .check-out-main {
@@ -154,8 +158,62 @@
     max-width: 100%;
   }
 }
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper {
+  padding-top: 20px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .ttl-tkywa {
+  margin-bottom: 32px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet {
+  align-items: center;
+  gap: 20px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth {
+  padding: 15px;
+  background-color: #EDEDED;
+  border-radius: 5px;
+  min-width: 250px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth:has(input:checked) .check-span {
+  background: var(--primary);
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth:has(input:checked) .check-span::before {
+  opacity: 1;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .check-span {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color: #fff;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .icon {
+  padding-right: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2705882353);
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .det {
+  padding-left: 20px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .det img, .check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .det svg {
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .det p {
+  padding-left: 0;
+  font-weight: 400;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .wallet_wrapper .use_wallet .wallet_meth .det span {
+  display: block;
+  font-weight: 500;
+}
 .check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .rysiv {
   padding-top: 20px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .rysiv .savd-addr-col {
+  padding-top: 20px;
+}
+.check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colA-flex-hfmcf .rysiv .savd-addr-col .colb-dtl-fwwz {
+  padding-bottom: 20px;
 }
 .check-out-main .check-out-secA-zbyqo .flex-checkout-cwgln .colB-flex-hfmcf {
   flex: 1;
@@ -277,6 +335,7 @@
 }
 .check-out-main .check-out-secA-zbyqo .bag-dobyk .bag-product-wrsvn-wrap .bag-product-wrsvn figure img {
   width: 107px;
+  border-radius: 5px;
 }
 .check-out-main .check-out-secA-zbyqo .bag-dobyk .bag-product-wrsvn-wrap .bag-product-wrsvn figure input {
   --size: 20px;
@@ -335,6 +394,10 @@
   max-width: 407px;
   margin-bottom: 18px;
 }
+.check-out-main .check-out-secA-zbyqo .bag-dobyk .bag-product-wrsvn-wrap .bag-product-wrsvn figcaption .title-tznlw {
+  font-size: 18px;
+  color: var(--black);
+}
 .check-out-main .check-out-secA-zbyqo .bag-dobyk .bag-product-wrsvn-wrap .bag-product-wrsvn figcaption .prdct-vzmmh {
   margin-bottom: 25px;
   display: flex;
@@ -392,6 +455,7 @@
   line-height: 22px;
   cursor: pointer;
   color: var(--text);
+  border-radius: 50%;
 }
 @media only screen and (max-width: 1200px) {
   .check-out-main .check-out-secA-zbyqo .bag-dobyk .bag-product-wrsvn-wrap .bag-product-wrsvn figcaption .prdct-vzmmh .val-wrap .minus-val, .check-out-main .check-out-secA-zbyqo .bag-dobyk .bag-product-wrsvn-wrap .bag-product-wrsvn figcaption .prdct-vzmmh .val-wrap .plus-val {
@@ -442,7 +506,7 @@
   font-weight: bold;
 }
 .check-out-main .check-out-secA-zbyqo .coupon-nvixw {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 .check-out-main .check-out-secA-zbyqo .coupon-nvixw .tlt-vcfrm {
@@ -470,6 +534,42 @@
   right: 0;
   bottom: 30px;
   font-size: 14px;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper {
+  width: 100%;
+  align-items: start;
+  gap: 15px;
+  background: #EDEDED;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper .icon {
+  flex: 0 1 auto;
+  background: var(--primary);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper .icon svg {
+  width: 20px;
+  height: 20px;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper .point {
+  flex: 1;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper .point h6 {
+  font-size: 14px;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper .point h6 span {
+  font-weight: 600;
+}
+.check-out-main .check-out-secA-zbyqo .point_wrapper .point p {
+  font-size: 14px;
+  color: var(--text);
 }
 .check-out-main .check-out-secA-zbyqo .prd-dtl-adr-wrap {
   border-bottom: 1px solid #D3D3D3;
@@ -709,6 +809,7 @@
 }
 .checkout-tbl-xiuh .ttl-amnt-tbl .ttl-txt, .checkout-tbl-xiuh .ttl-amnt-tbl .ttl-prc-txt {
   color: var(--black);
+  font-weight: 500;
 }
 .checkout-tbl-xiuh .checkbox-full {
   margin-top: 20px;

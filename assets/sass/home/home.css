@@ -152,6 +152,7 @@
   z-index: 2;
 }
 .home-secB .product_slider_sec .swiper-nav button {
+  border: none;
   width: 45px;
   height: 45px;
   background-color: var(--white);
@@ -306,6 +307,7 @@
   z-index: 2;
 }
 .home-secD .best_sellers_wrapper .bestseller_nav_content .tabs .swiper-nav button {
+  border: none;
   width: 45px;
   height: 45px;
   background-color: var(--white);

@@ -90,6 +90,15 @@ header
                             border-top-right-radius: 0
                             border-bottom-left-radius: 5px
                             border-bottom-right-radius: 5px
+                            max-height: 80vh
+                            overflow-y: auto
+                            z-index: 1
+                            &::-webkit-scrollbar
+                                width: 4px
+                                height: 4px
+                                background-color: $white
+                            &::-webkit-scrollbar-thumb
+                                background-color: $primary
                             .dropdown_wrap
                                 padding: 15px 10px
                                 .searched_pro
@@ -146,6 +155,7 @@ header
                                     transform: scale3d(1, 1, 1)
                                     opacity: 1
                             .my-acnt-dropdown
+                                width: 170px
                                 position: absolute
                                 top: calc( 100% + 10px )
                                 left: 50%
@@ -226,7 +236,7 @@ header
                                 display: flex
                                 align-items: center
                                 gap: 5px
-                            svg
+                            svg, img
                                 width: 24px
                                 height: 24px
                                 @include media(540)
@@ -274,7 +284,7 @@ header
                             background: $white
                             top: 100%
                             width: fit-content
-                            height: 280px
+                            height: 450px
                             overflow-y: auto
                             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
                             @include scrollbar($width: 8px)
@@ -413,7 +423,8 @@ header
     &.header-fixed
         @include media(991)
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
-
+        transition: .5s ease
+        height: var(--headerfixed)
     &.header-fit
         transition: .5s ease
         &::after 
@@ -1068,10 +1079,10 @@ header
                 margin-bottom: 50px
                 h4
                     flex: 1
-                    font-family: $Rubik
+                    font-family: $Rubik 
                     font-size: 20px
                     line-height: 25.64px
-                    letter-spacing: 0.2em
+                    font-weight: 500
                     text-transform: uppercase
                 .close
                     svg
@@ -1373,4 +1384,26 @@ footer
                 img
                     width: 65px
                     vertical-align: middle
-                            
+
+.thanks_banner
+    margin-top: var(--headerheight)
+    .bg
+        height: calc( 100vh - var(--headerfixed) )
+        .banner-wrapper
+            .content
+                text-align: center
+                figure
+                    width: 50px
+                    margin: 0 auto
+                    padding-bottom: 20px
+                    img
+                        height: 100%      
+                h1
+                    font-size: 60px
+                    color: $white
+                    font-weight: 500         
+                    line-height: 1.5
+                p
+                    font-size: 20px
+                    color: $white
+                    padding-bottom: 50px

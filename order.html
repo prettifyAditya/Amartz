@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="robots" content="noindex, nofollow" />
+
+    <meta name="csrf-token" content="8r8dNv3c4RkoJcOgWvaLJqaZ9cUAAgxJCjXyfaT9" />
+
+    <title>Dashboard | Amartz - Exclusive Frozen and Instant Foods</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="https://amartz.prettifygroup.com/order" />
+    <!-- OG & Twitter tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amartz.prettifygroup.com/order" />
+    <meta property="og:title" content="Dashboard | Amartz - Exclusive Frozen and Instant Foods" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://amartz.prettifygroup.com/OGImage/logodo-custom-logo.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://amartz.prettifygroup.com/order" />
+    <meta property="twitter:title" content="Dashboard | Amartz - Exclusive Frozen and Instant Foods" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="https://amartz.prettifygroup.com/OGImage/amartz-custom-logo.png" />
+
+    <link rel="icon" type="image/png" href="https://amartz.prettifygroup.com/assets/icon/favicon/favicon-96x96.png"
+        sizes="96x96" />
+
+    <link rel="icon" type="image/svg+xml" href="https://amartz.prettifygroup.com/assets/icon/favicon/favicon.svg" />
+
+    <link rel="shortcut icon" href="https://amartz.prettifygroup.com/assets/icon/favicon/favicon.ico" />
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://amartz.prettifygroup.com/assets/icon/favicon/apple-touch-icon.png" />
+
+    <link rel="manifest" href="https://amartz.prettifygroup.com/assets/icon/favicon/site.webmanifest" />
+
+    <link rel="icon" type="image/png" href="https://amartz.prettifygroup.com/assets/icon/favicon/favicon-96x96.png"
+        sizes="96x96" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://amartz.prettifygroup.com/assets/css/animate.css" />
+
+    <link rel="stylesheet" href="https://amartz.prettifygroup.com/assets/sass/header/header.css" />
+    <link rel="stylesheet" href="/assets/sass/dashboard/dashboard.css" />
+
+    <style>
+        .modal1_1 {
+            position: fixed;
+            z-index: 99999;
+            height: 100%;
+            top: 0;
+            opacity: 1;
+            -moz-opacity: 0.8;
+            width: 100%;
+            background-color: #0c0c0c9c;
+        }
+
+        .center1_1 {
+            position: absolute;
+            z-index: 1000;
+            width: 100px;
+            opacity: 1;
+            -moz-opacity: 1;
+            top: 50%;
+            left: 50%;
+            line-height: 0;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .center1_1 p {
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 18px;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://amartz.prettifygroup.com/assets/js/function.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="modal1_1" style="display:none;">
+
+        <div class="center1_1">
+
+            <img src="https://amartz.prettifygroup.com/assets/images/fav.png" class="svg wiggle"
+                alt="amartz, Please wait..." title="Amartz">
+
+        </div>
+
+    </div>
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="upper-container">
+
+                <div class="colA">
+
+                    <div class="logo">
+
+                        <a href="/"><img src="https://amartz.prettifygroup.com/assets/images/logo.svg" alt="" /></a>
+
+                    </div>
+
+                </div>
+
+                <div class="colB">
+
+                    <div class="search_wrapper">
+
+                        <div class="search_wrap">
+
+                            <div class="search_input_wrap">
+
+                                <input type="text" name="search" class="search_input" placeholder="Search Products"
+                                    id="" />
+
+                                <button type="button" class="search_btn">
+
+                                    <img src="https://amartz.prettifygroup.com/assets/icon/search-white.svg"
+                                        class="search-open-img" alt="" />
+
+                                    <img src="https://amartz.prettifygroup.com/assets/icon/close-white.svg"
+                                        style="display: none;" class="search-close-img" alt="" />
+
+                                </button>
+
+                            </div>
+
+                            <div class="search_dropdown_menu">
+                                <div class="dropdown_wrap">
+                                    <div class="dropdown_data" id="BindSerchData"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="colC">
+
+                    <ul>
+
+                        <li><a href="tel:+919182652963"><img
+                                    src="https://amartz.prettifygroup.com/assets/icon/call-black.svg" class="svg"
+                                    alt="" /> + 91 - 9182652963</a></li>
+
+
+                        <li class="my-account">
+
+                            <a href="javascript:void(0)" class="sm-block">
+
+                                <img src="https://amartz.prettifygroup.com/assets/icon/user-white.svg" class="svg"
+                                    alt="" />
+
+                            </a>
+
+                            <a href="javascript:void(0)" class="sm-none">My Account</a>
+
+                            <div class="my-acnt-dropdown">
+
+                                <ul>
+
+                                    <li><a href="/profile">My Account</a></li>
+
+                                    <li><a href="/order">My Order</a></li>
+
+                                    <li><a href="/wishlist">My Wishlist</a></li>
+
+                                    <li><a href="/log-out">Log Out</a></li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                        <li><a href="/wishlist"><img src="https://amartz.prettifygroup.com/assets/icon/like.svg"
+                                    width="24" height="24" class="svg" alt="" /></a> <span class="dot-noti">1</span>
+                        </li>
+
+
+                        <li><a href="/shopping-cart"><img src="https://amartz.prettifygroup.com/assets/icon/cart.svg"
+                                    width="24" height="24" class="svg" alt="" /></a> <span class="dot-noti">0</span>
+                        </li>
+
+                        <li class="sm-block"><button type="button" class="ham-btn" data-model=".ham-pop">
+                                <div class="lines"><span></span> <span></span> <span></span></div>
+                            </button></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="lower-container">
+
+                <ul>
+
+                    <li class="hasDropdown des-menu">
+
+                        <a href="javascript:void(0)"><img src="/assets/icon/category.svg" class="svg"
+                                alt="" />Categories</a>
+
+                        <div class="dropdown-menu">
+
+                            <div class="dropdown-menu-wrap">
+
+                                <div class="flex">
+
+                                    <div class="colA-md">
+
+                                        <ul class="subcat-ul">
+
+
+                                            <li class="subcat-li">
+
+                                                <a href="/products/frozato" class="subcat-li-anchr">
+
+                                                    <img src="https://amartz.prettifygroup.com/BackEndImage/CategoryImage/frozato.png"
+                                                        alt="" />
+
+                                                    Frozato
+
+                                                </a>
+
+
+                                                <div class="col-sub-menu">
+
+                                                    <ul class="subsubcat-ul">
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozato/fish-fry"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fry
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozato/read-to-eat"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Read to Eat
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozato/fish-fillets"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fillets
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozato/fish-tikka"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Tikka
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+
+
+                                            </li>
+
+
+                                            <li class="subcat-li">
+
+                                                <a href="/products/frozen-food" class="subcat-li-anchr">
+
+                                                    <img src="https://amartz.prettifygroup.com/BackEndImage/CategoryImage/frozen-food.png"
+                                                        alt="" />
+
+                                                    Frozen Food
+
+                                                </a>
+
+
+                                                <div class="col-sub-menu">
+
+                                                    <ul class="subsubcat-ul">
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozen-food/fish-tikka"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Tikka
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozen-food/fish-fry"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fry
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozen-food/read-to-eat"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Read to Eat
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozen-food/fish-fillets"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fillets
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/frozen-food/momos"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Momos
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+
+
+                                            </li>
+
+
+                                            <li class="subcat-li">
+
+                                                <a href="/products/instant-food" class="subcat-li-anchr">
+
+                                                    <img src="https://amartz.prettifygroup.com/BackEndImage/CategoryImage/instant-food.png"
+                                                        alt="" />
+
+                                                    Instant Food
+
+                                                </a>
+
+
+                                                <div class="col-sub-menu">
+
+                                                    <ul class="subsubcat-ul">
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/instant-food/fish-tikka"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Tikka
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/instant-food/fish-fry"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fry
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/instant-food/read-to-eat"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Read to Eat
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+
+
+                                            </li>
+
+
+                                            <li class="subcat-li">
+
+                                                <a href="/products/ice-creams" class="subcat-li-anchr">
+
+                                                    <img src="https://amartz.prettifygroup.com/BackEndImage/CategoryImage/ice-creams.png"
+                                                        alt="" />
+
+                                                    Ice Creams
+
+                                                </a>
+
+
+                                                <div class="col-sub-menu">
+
+                                                    <ul class="subsubcat-ul">
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/ice-creams/fish-tikka"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Tikka
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/ice-creams/fish-fry"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fry
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/ice-creams/read-to-eat"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Read to Eat
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                        <li class="subsubcat-li">
+
+                                                            <a href="/products/ice-creams/fish-fillets"
+                                                                class="subsubcat-li-anchr">
+
+                                                                Fish Fillets
+
+                                                            </a>
+
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+
+
+                                            </li>
+
+
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>25 % off Use coupon code #AMARTZ25</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main id="main">
+
+        <link rel="stylesheet" href="https://amartz.prettifygroup.com/assets/sass/dashboard/dashboard.css" />
+        <div class="dashboard-secA mt-hdrfxd">
+            <div class="container">
+                <div class="flex">
+                    <div class="aside-left card-body">
+                        <div class="aside-left-wrap">
+                            <div class="profile-col">
+                                <div class="ico">
+                                    <img src="https://amartz.prettifygroup.com/BackEndImage/CustomerImage/user.jpg"
+                                        alt="Aditya" title="Aditya" />
+                                </div>
+                                <p class="wlcm">Welcome</p>
+                                <p class="name-usr">Aditya</p>
+                            </div>
+                            <div class="nav-col Header_nav_Active">
+                                <ul>
+                                    <li><a href="/profile">My Account</a></li>
+                                    <li><a href="/order">My Order</a></li>
+                                    <li><a href="/wishlist">My Wishlist</a></li>
+                                    <li><a href="/log-out">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-right">
+                        <div class="wallet_wrapper">
+                            <div class="upper_bar">
+                                <h4 class="form-title">My Wallet</h4>
+                                <div class="avail_bal">
+                                    <div class="icon">
+                                        <img src="/assets/icon/wallet.svg" class="svg" alt="">
+                                    </div>
+                                    <div class="bal">
+                                        <p>Available Balance</p>
+                                        <span>₹1,170</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom_bar">
+                                <div class="content">
+                                    <div class="icon">
+                                        <img src="/assets/images/favicon.svg" alt="" class="svg">
+                                    </div>
+                                <div class="form">
+                                    <div class="rupee">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="{24}" height="{24}" viewBox="0 0 24 24"><path fill="none" stroke="#666" strokelinecap="round" strokelinejoin="round" strokemiterlimit="{10}" strokewidth="{1.5}" d="M7 4h3.75c1.393 0 2.728.474 3.713 1.318S16 7.307 16 8.5s-.553 2.338-1.537 3.182c-.985.844-2.32 1.318-3.712 1.318H7l8.2 7M7 8.5h11M11 4h7"></path></svg>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter Amount">
+                                    </div>
+                                </div>
+                                <div class="btn border-5">ADD AMOUNT</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <video playsinline autoplay muted loop class="footer-bg">
+            <source src="https://amartz.prettifygroup.com/assets/video/footer-bg.mp4" />
+        </video>
+
+        <div class="content over-hidden">
+
+            <div class="upper-footer">
+
+                <div class="flex">
+
+                    <a href="/" class="colA" data-animate="fade-down"><img
+                            src="https://amartz.prettifygroup.com/assets/images/logo-light.svg" alt="" /></a>
+
+                    <div class="colB" data-animate="fade-up">
+
+                        <ul>
+
+                            <li><a href="/about-us">About Amartz</a></li>
+
+                            <li><a href="/products">Products</a></li>
+
+                            <li><a href="/blogs">Blog</a></li>
+
+                            <li><a href="/contact-us">Contact Us</a></li>
+
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+
+                            <li><a href="/delivery-and-returns-policy">Return Policy</a></li>
+
+                            <li><a href="/terms-and-condition">Terms & Conditions</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="lower-footer">
+
+                <div class="flex">
+
+                    <div class="colA col" data-animate="fade-right">
+
+                        <h5>Amartz Foods and Beverages</h5>
+
+                        <a href="https://maps.app.goo.gl/2wexFDp2y8CmqJf57" target="_blank">10-3-547 K.K Heights Ground
+                            Floor, Opp SBI Bank, Vijay Nagar Colony</a>
+
+                    </div>
+
+                    <div class="colB col" data-animate="fade-up">
+
+                        <h5>Phone</h5>
+
+                        <a href="tel:+919182652963">+91- 9182652963</a>
+
+                        <h5>Email</h5>
+
+                        <a href="mailto:info@amartz.in">info@amartz.in</a>
+
+                    </div>
+
+                    <div class="colC col social-icons" data-animate="fade-left">
+
+                        <h5>Connect Us</h5>
+
+                        <ul>
+
+                            <li><a href="javascript:void(0)" target="_blank"><img
+                                        src="https://amartz.prettifygroup.com/assets/icon/twitter.svg" alt="" /></a>
+                            </li>
+
+                            <li><a href="javascript:void(0)" target="_blank"><img
+                                        src="https://amartz.prettifygroup.com/assets/icon/facebook.svg" alt="" /></a>
+                            </li>
+
+                            <li><a href="javascript:void(0)" target="_blank"><img
+                                        src="https://amartz.prettifygroup.com/assets/icon/instagram.svg" alt="" /></a>
+                            </li>
+
+                            <li><a href="javascript:void(0)" target="_blank"><img
+                                        src="https://amartz.prettifygroup.com/assets/icon/linkedin.svg" alt="" /></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tag" data-animate="zoom-in">
+
+                <p>
+
+                    © Amartz. All rights reserved.<a href="https://www.prettifycreative.com" target="_blank"> Made by
+                        passion <img src="https://amartz.prettifygroup.com/assets/icon/prettify-light.svg"
+                            alt="Made-by-passion" /></a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="overlay"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"
+        integrity="sha512-771ZvVCYr4EfUGXr63AcX7thw7EKa6QE1fhxi8JG7mPacB/arC0cyvYPXKUkCrX2sYKnnFCZby3ZZik42jOuSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="https://amartz.prettifygroup.com/assets/js/animate.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="https://amartz.prettifygroup.com/assets/js/main.js"></script>
+
+    <script type="text/javascript" src="https://amartz.prettifygroup.com/assets/js/Validation.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $searchWrap = $('.search_wrap')
+
+            $searchInput = $('.search_input')
+
+            $searchDropdown = $('.search_dropdown_menu')
+
+            $searchBtn = $('.search_btn')
+
+            $searchOpenImg = $('.search-open-img')
+
+            $searchCloseImg = $('.search-close-img')
+
+
+
+
+
+            $searchInput.on('input', function () {
+
+                if ($(this).val() != '') {
+
+                    $searchDropdown.slideDown();
+
+                    $searchDropdown.addClass('is-open');
+
+                    $searchOpenImg.hide();
+
+                    $searchCloseImg.show();
+
+                    $searchBtn.addClass('close-search-btn');
+
+                }
+
+                else {
+
+                    $searchDropdown.stop().slideUp();
+
+                    $searchDropdown.removeClass('is-open');
+
+                    $searchOpenImg.show();
+
+                    $searchCloseImg.hide();
+
+                    $searchBtn.removeClass('close-search-btn');
+
+                }
+
+            });
+
+            $searchInput.on('click', function () {
+
+                $searchWrap.addClass('search_wrap_active')
+
+            });
+
+            $searchInput.on('blur', function () {
+
+                if ($(this).val() == '') {
+
+                    $searchWrap.removeClass('search_wrap_active')
+
+                }
+
+            });
+
+            $(document).on('click', '.close-search-btn', function () {
+
+                $searchInput.val('');
+
+                $searchDropdown.stop().slideUp();
+
+                $searchDropdown.removeClass('is-open');
+
+                $searchCloseImg.hide();
+
+                $searchOpenImg.show();
+
+                $searchBtn.removeClass('close-search-btn');
+
+                $searchWrap.removeClass('search_wrap_active')
+
+            })
+
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const loginForm = document.getElementById("loginForm");
+
+            const otpForm = document.getElementById("OTPVerifyForm");
+
+            const NoramlEnquiryForm = document.getElementById("NoramlEnquiryForm");
+
+
+
+            if (loginForm) {
+
+                loginForm.addEventListener("keypress", function (event) {
+
+                    if (event.key === "Enter") {
+
+                        event.preventDefault();
+
+                        const btnGetOTP = document.getElementById("btnGetOTP");
+
+                        if (btnGetOTP) {
+
+                            btnGetOTP.click();
+
+                        }
+
+                    }
+
+                });
+
+            }
+
+
+
+            if (otpForm) {
+
+                otpForm.addEventListener("keypress", function (event) {
+
+                    if (event.key === "Enter") {
+
+                        event.preventDefault();
+
+                        const btnVerifyOTP = document.getElementById("btnVerifyOTP");
+
+                        if (btnVerifyOTP) {
+
+                            btnVerifyOTP.click();
+
+                        }
+
+                    }
+
+                });
+
+            }
+
+
+
+            if (NoramlEnquiryForm) {
+
+                NoramlEnquiryForm.addEventListener("keypress", function (event) {
+
+                    if (event.key === "Enter") {
+
+                        event.preventDefault();
+
+                        const btnSubmtNormal = document.getElementById("btnSubmtNormal");
+
+                        if (btnSubmtNormal) {
+
+                            btnSubmtNormal.click();
+
+                        }
+
+                    }
+
+                });
+
+            }
+
+        });
+
+    </script>
+
+    <!--Log-In Code Here -->
+
+    <script type="text/javascript">
+
+        var OTP = "";
+
+        var EmailIDorPhone = "";
+
+        var Is_Email = "";
+
+        var No = "";
+
+        var FullName = "No";
+
+        var list = "0";
+
+
+
+        $('.check_wishlist').click(function () {
+
+            list = $(this).attr('data-att').replace('Whi_', '');
+
+            if ($(this).attr('data-log') == "1") {
+
+                $('.modal1_1').show();
+
+                $.ajax({
+
+                    url: `/wish-list/${list}`,
+
+                    type: 'GET',
+
+                    dataType: 'json',
+
+                    success: function (data) {
+
+                        if (data === 1) {
+
+                            location.reload();
+
+                        } else {
+
+                            alert("Pleae try again after some time.")
+
+                        }
+
+                        $('.modal1_1').hide();
+
+                    },
+
+                    error: function (xhr, status, error) {
+
+                        alert(`Unable to verify OTP. Error: ${xhr.responseText}`);
+
+                        console.log(xhr.responseText);
+
+                        $('.modal1_1').hide();
+
+                    }
+
+                });
+
+            }
+
+        });
+
+
+
+        function isCheckNumeric(n) {
+
+            return !isNaN(parseFloat(n)) && isFinite(n);
+
+        }
+
+
+
+        $("#txtCustomerEmailIDAndPhoneNo").keyup(function () {
+
+            function isNumeric(n) {
+
+                return !isNaN(parseFloat(n)) && isFinite(n);
+
+            }
+
+            var MyValCheck = $('#txtCustomerEmailIDAndPhoneNo').val();
+
+            if (isNumeric(MyValCheck)) {
+
+                $("#txtCustomerEmailIDAndPhoneNo").attr('maxlength', '10');
+
+                Is_Email = "No";
+
+                $('.is_mobile_email').text("+91 ");
+
+            }
+
+            else {
+
+                Is_Email = "Yes";
+
+                $('.is_mobile_email').text("");
+
+                $("#txtCustomerEmailIDAndPhoneNo").attr('maxlength', '200');
+
+            }
+
+        });
+
+
+
+        $('.login_otp_Send').click(function () {
+
+            if (!req(document.getElementById("txtCustomerEmailIDAndPhoneNo"), "Please enter your email id And phone no."))
+
+                return false;
+
+            if (isCheckNumeric($('#txtCustomerEmailIDAndPhoneNo').val())) {
+
+                $("#txtCustomerEmailIDAndPhoneNo").attr('maxlength', '10');
+
+                $("#txtCustomerEmailIDAndPhoneNo").attr('onkeypress', 'return numeralsOnly(event)');
+
+                if (!req(document.getElementById("txtCustomerEmailIDAndPhoneNo"), "Please enter contact no."))
+
+                    return false;
+
+                if ($('#txtCustomerEmailIDAndPhoneNo').val().length < 10) {
+
+                    alert("Please enter 10 digits mobile no.");
+
+                    return false;
+
+                }
+
+            }
+
+            else {
+
+                $("#txtCustomerEmailIDAndPhoneNo").attr('maxlength', '200');
+
+                if (!isEmail(document.getElementById("txtCustomerEmailIDAndPhoneNo"), "Should be valid emailid."))
+
+                    return false;
+
+            }
+
+            $('.modal1_1').show();
+
+            EmailIDorPhone = $('#txtCustomerEmailIDAndPhoneNo').val();
+
+            $.ajax({
+
+                url: '/check-email-or-phone/' + EmailIDorPhone,
+
+                type: 'GET',
+
+                dataType: 'json',
+
+                success: function (data) {
+
+                    if (data === 1) {
+
+                        $('#loginForm').hide();
+
+                        $('.otp-verify').show();
+
+                        $('.shwo_user').show();
+
+                        $('.txtVr').html("Please enter the OTP sent to <span id='emailOrMobileValue'>" + EmailIDorPhone + "</span>");
+
+                        No = "Yes";
+
+                    }
+
+                    else if (data === -1) {
+
+                        $('#loginForm').hide();
+
+                        $('.otp-verify').show();
+
+                        $('.shwo_user').hide();
+
+                        No = "No";
+
+                        $('.txtVr').html("Please enter the OTP sent to <span id='emailOrMobileValue'>" + EmailIDorPhone + "</span>");
+
+                    }
+
+                    $('.tab-nav-content .tabs[data-tab="otp-verify"]').addClass('active').siblings().removeClass('active');
+
+                    $('.modal1_1').hide();
+
+                },
+
+                error: function () {
+
+                    $('.wefeewf').html("Entered Mobile/Email account is Inactive, Please coordinate to administrator.");
+
+                    $('.modal1_1').hide();
+
+                }
+
+            });
+
+        });
+
+
+
+        $('.verify_otp_by_user').click(function () {
+
+            OTP = $('#txtOPT1').val() + $('#txtOPT2').val() + $('#txtOPT3').val() + $('#txtOPT4').val();
+
+            EmailIDorPhone = $('#txtCustomerEmailIDAndPhoneNo').val();
+
+            if ($('#txtSignUpCustomerName').val() != "") {
+
+                FullName = $('#txtSignUpCustomerName').val();
+
+            }
+
+            if (No === "Yes") {
+
+                if (!req(document.getElementById("txtSignUpCustomerName"), "Please enter your full name.")) {
+
+                    return false;
+
+                }
+
+            }
+
+            if (OTP.length < 4) {
+
+                alert("Please enter 4 digits otp.");
+
+                return false;
+
+            }
+
+            $('.modal1_1').show();
+
+            $.ajax({
+
+                url: `/verfy-otp/${OTP}/${EmailIDorPhone}/${No}/${FullName}/${Is_Email}/${list}`,
+
+                type: 'GET',
+
+                dataType: 'json',
+
+                success: function (data) {
+
+                    //alert(data);
+
+                    if (data === 1) {
+
+                        location.reload();
+
+                    } else {
+
+                        let errorMsg = "The OTP entered is incorrect!";
+
+                        $('.otp-error-ozrj').text(errorMsg).show();
+
+                    }
+
+                    $('.modal1_1').hide();
+
+                },
+
+                error: function (xhr, status, error) {
+
+                    alert(`Unable to verify OTP. Error: ${xhr.responseText}`);
+
+                    console.log(xhr.responseText);
+
+                    $('.modal1_1').hide();
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+    <!--Log-In Code Here -->
+
+    <!--Search Code Here -->
+
+    <script type="text/javascript">
+
+        $('input.search_input').on('keyup change', function () {
+
+            const inputValue = $.trim($(this).val());
+
+            const notFoundMessage = `<div class="product-not-found not-found2"><div class="nt-fnd-wrp"><img class="ico" src="/assets/icon/not-found.gif" alt=""><p>Product Not Found!</p></div></div>`;
+
+            $.ajax({
+
+                url: '/products-search/' + inputValue,
+
+                type: 'GET',
+
+                dataType: 'json',
+
+                success: function (data) {
+
+                    var newData = Array.isArray(data) ? data : JSON.parse(Object.values(data)[0]);
+
+                    var Search_List = "";
+
+                    if (newData.length === 0) {
+
+                        $('.search_dropdown_menu').show();
+
+                        $('#BindSerchData').html(notFoundMessage);
+
+                    }
+
+                    else {
+
+                        newData.forEach((item, index) => {
+
+                            var SalePrice = "";
+
+                            if (parseInt(item.MinMRPPrice) > parseInt(item.MinSalePrice)) {
+
+                                SalePrice = `<span>₹ ${item.MinMRPPrice}.00</span> ₹ ${item.MinSalePrice}.00`;
+
+                            } else {
+
+                                SalePrice = `₹ ${item.MinSalePrice}.00`;
+
+                            }
+
+                            Search_List += `
+
+                                <a href="/${item.ProductNameURL}" class="searched_pro">
+
+                                    <img src="/BackEndImage/ProductImage/${item.ProductImage}"  alt="${item.ProductNameURL}" title="${item.ProductName}"/>
+
+                                    <div class="info">
+
+                                        <p class="pro_name">${item.ProductName}</p>
+
+                                        <p class="pro_price">${SalePrice}</p>
+
+                                    </div>
+
+                                </a>`;
+
+                        });
+
+                    }
+
+                    $('#BindSerchData').html(Search_List);
+
+                    $('.search_dropdown_menu').show();
+
+                },
+
+                error: function () {
+
+                    $('.search_dropdown_menu').show();
+
+                    $('#BindSerchData').html(notFoundMessage);
+
+                }
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            var pathname = window.location.pathname;
+
+            var pathname1 = window.location.pathname;
+
+            if (pathname1 === "/order-detail") {
+
+                pathname1 = "/order";
+
+            }
+
+            else {
+
+                pathname1 = window.location.pathname;
+
+            }
+
+            $('.Header_nav_Active > ul > li > a[href="' + pathname1 + '"]').addClass('active');
+
+        });
+
+    </script>
+
+    <!--Search Code Here -->
+
+
+
+    <!--Validation Code Here -->
+
+    <script type="text/javascript">
+
+        //4 Master Page - Normal Inquiry
+
+        function PageCheckNormalInquiryMaster() {
+
+            var txtPhoneNumber = document.getElementById("txtNormalPhoneNo").value;
+
+            if (!req(document.getElementById("txtNormalFullName"), "Please enter your first name."))
+
+                return false;
+
+            if (!req(document.getElementById("txtNormalLastFullName"), "Please enter your last name."))
+
+                return false;
+
+            if (!req(document.getElementById("txtNormalEmailID"), "Please enter your email."))
+
+                return false;
+
+            if (!isEmail(document.getElementById("txtNormalEmailID"), "Please enter correct email id."))
+
+                return false;
+
+            if (!req(document.getElementById("txtNormalPhoneNo"), "Please enter your phone no."))
+
+                return false;
+
+            if (txtPhoneNumber.length < 10) {
+
+                alert("Please enter 10 digits mobile number.");
+
+                document.getElementById("txtNormalPhoneNo").focus();
+
+                return false;
+
+            }
+
+            if (!req(document.getElementById("Normaltextarea1"), "Please enter your message."))
+
+                return false;
+
+            $('.modal1_1').show();
+
+        }
+
+    </script>
+
+    <!--Validation Code Here -->
+
+    <script type="text/javascript">
+        $(function () {
+            $('header').addClass('header-fit');
+            $('header').addClass('header-shadow');
+            $('.header-category-strip').hide();
+        });
+    </script>
+
+</body>
+
+</html>

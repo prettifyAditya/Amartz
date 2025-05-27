@@ -524,7 +524,7 @@
 :root {
   --headerpadding: 15px;
   --headerheight: 135px;
-  --headerfixed: 100px;
+  --headerfixed: 120px;
   --homecatstrip: 80px;
   --homecatstripfixed: 70px;
   --mobilesearchbar: 45px;
@@ -618,13 +618,14 @@
 
 body::-webkit-scrollbar {
   width: 8px;
-  background: var(--black);
+  background: var(--white);
 }
 body::-webkit-scrollbar-track {
   box-shadow: none;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  background-color: var(--primary);
+  border-radius: 10px;
 }
 @media only screen and (max-width: 540px) {
   body {
@@ -733,7 +734,7 @@ svg path {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: #fff;
+  color: #000;
 }
 
 h1 {
@@ -769,8 +770,6 @@ h3 {
 .heading h3 {
   font-size: 20px;
   line-height: 1.282;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
 }
 .heading.h-large h3, .heading.h-large h2 {
   font-size: 36px;
@@ -781,6 +780,7 @@ h3 {
 .heading > p {
   margin-top: 10px;
   color: var(--text);
+  font-weight: 400;
 }
 
 .head {
@@ -1311,10 +1311,10 @@ img {
   height: auto;
 }
 
-.swiper-nav {
+.swiper-nav, .slider-nav {
   line-height: 0;
 }
-.swiper-nav.center-full {
+.swiper-nav.center-full, .slider-nav.center-full {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1331,26 +1331,35 @@ img {
      -moz-user-select: none;
           user-select: none;
 }
-.swiper-nav.center-full .swiper-prev, .swiper-nav.center-full .swiper-next {
+.swiper-nav.center-full .swiper-prev, .swiper-nav.center-full .swiper-next, .slider-nav.center-full .swiper-prev, .slider-nav.center-full .swiper-next {
   pointer-events: all;
   -webkit-user-select: auto;
      -moz-user-select: auto;
           user-select: auto;
 }
-.swiper-nav.group {
+.swiper-nav.group, .slider-nav.group {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0 15px;
 }
 @media only screen and (max-width: 1152px) {
-  .swiper-nav.group {
+  .swiper-nav.group, .slider-nav.group {
     gap: 0 8px;
   }
 }
-.swiper-nav.icon-width-auto .swiper-next svg, .swiper-nav.icon-width-auto .swiper-prev svg {
+.swiper-nav.icon-width-auto .swiper-next svg, .swiper-nav.icon-width-auto .swiper-prev svg, .slider-nav.icon-width-auto .swiper-next svg, .slider-nav.icon-width-auto .swiper-prev svg {
   width: auto;
   height: auto;
+}
+.swiper-nav button, .slider-nav button {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+}
+.swiper-nav button svg, .slider-nav button svg {
+  vertical-align: middle;
 }
 
 .swiper-next svg, .swiper-next img {
@@ -1550,12 +1559,7 @@ img {
 }
 .slider-section .upper-sec {
   position: relative;
-  margin-bottom: 5rem;
-}
-@media only screen and (max-width: 768px) {
-  .slider-section .upper-sec {
-    margin-bottom: 3rem;
-  }
+  margin-bottom: 3rem;
 }
 @media only screen and (max-width: 540px) {
   .slider-section .upper-sec {
@@ -1566,14 +1570,14 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 @media only screen and (max-width: 768px) {
   .slider-section .upper-sec .slider-nav {
     display: none;
   }
-}
-.slider-section .upper-sec .slider-nav .swiper-prev {
-  margin-right: 22px;
 }
 .slider-section .upper-sec .heading {
   text-align: center;
@@ -1632,6 +1636,7 @@ img {
 
 .product-col {
   position: relative;
+  overflow: hidden;
   position: relative;
 }
 .product-col::before {
@@ -1660,51 +1665,33 @@ img {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-.product-col .figure .add-to, .product-col figure .add-to {
+.product-col .figure .call_to_action, .product-col figure .call_to_action {
   width: 100%;
   position: absolute;
-  right: 0;
   bottom: 0;
-  text-align: right;
+  transform: translateY(100%);
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: end;
-  opacity: 0;
+  justify-content: center;
   transition: 0.5s ease;
 }
-.product-col .figure .add-to a, .product-col figure .add-to a {
+.product-col .figure .call_to_action a, .product-col figure .call_to_action a {
   display: block;
-  padding: 11px 20px;
-  transition: 0.5s ease;
+  text-align: center;
+  flex: 1;
+  padding: 20px 10px;
+  background-color: var(--primary);
+  color: var(--white);
 }
-.product-col .figure .add-to a svg, .product-col figure .add-to a svg {
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
+.product-col .figure .call_to_action a.viewDetails, .product-col figure .call_to_action a.viewDetails {
+  border-right: 1px solid rgba(255, 255, 255, 0.2470588235);
+  background-color: var(--white);
+  color: var(--primary);
 }
-.product-col .figure .add-to a.add2cart, .product-col figure .add-to a.add2cart {
-  background-color: #13195F;
-}
-.product-col .figure .add-to a.add2cart:hover, .product-col figure .add-to a.add2cart:hover {
-  background-color: #fff;
-}
-.product-col .figure .add-to a.add2cart:hover svg path, .product-col figure .add-to a.add2cart:hover svg path {
-  fill: var(--primary);
-}
-.product-col .figure .add-to a.add2wish, .product-col figure .add-to a.add2wish {
-  background-color: #030735;
-}
-.product-col .figure .add-to a.add2wish.active, .product-col figure .add-to a.add2wish.active {
-  background-color: #fff;
-}
-.product-col .figure .add-to a.add2wish.active svg path, .product-col figure .add-to a.add2wish.active svg path {
-  fill: var(--primary);
-}
-.product-col .figure .add-to a.add2wish:hover, .product-col figure .add-to a.add2wish:hover {
-  background-color: #fff;
-}
-.product-col .figure .add-to a.add2wish:hover svg path, .product-col figure .add-to a.add2wish:hover svg path {
-  stroke: var(--primary);
+.product-col .figure .call_to_action a:hover, .product-col figure .call_to_action a:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 .product-col .figure img, .product-col figure img {
   width: 100%;
@@ -1764,8 +1751,31 @@ img {
   font-weight: 500;
   color: var(--black);
 }
-.product-col:hover .add-to {
-  opacity: 1;
+.product-col .wishlist {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  transform: translateX(4vw);
+  width: 30px;
+  height: 30px;
+  transition: 0.5s ease;
+}
+.product-col .wishlist.added svg path {
+  fill: var(--primary);
+}
+.product-col .wishlist button {
+  width: 100%;
+  height: 100%;
+}
+.product-col .wishlist button img, .product-col .wishlist button svg {
+  width: 100%;
+  height: 100%;
+}
+.product-col:hover .wishlist {
+  transform: translateX(0);
+}
+.product-col:hover .call_to_action {
+  transform: translateY(0);
 }
 .product-col:hover .figure img, .product-col:hover figure img {
   transform: scale(1.1);
@@ -2226,6 +2236,12 @@ img {
 .green-color {
   color: var(--green) !important;
 }
+.green-color svg rect {
+  stroke: var(--green);
+}
+.green-color svg path {
+  fill: var(--green);
+}
 
 .red-color {
   color: var(--red) !important;
@@ -2241,6 +2257,10 @@ em {
 
 .mt-hdrfxd {
   margin-top: var(--headerfixed);
+}
+
+.mt-hdr {
+  margin-top: var(--headerheight);
 }
 
 .w-full {
@@ -2322,6 +2342,11 @@ em {
   padding-top: 20px;
 }
 
+.wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
 @keyframes wiggle {
   0% {
     transform: rotate(10deg);
@@ -2335,6 +2360,10 @@ em {
 }
 .over-hidden {
   overflow: hidden;
+}
+
+.border-5 {
+  border-radius: 5px;
 }
 
 header {
@@ -2447,6 +2476,17 @@ header .header-container .upper-container .colB .search_wrapper .search_wrap .se
   border-top-right-radius: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1;
+}
+header .header-container .upper-container .colB .search_wrapper .search_wrap .search_dropdown_menu::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: var(--white);
+}
+header .header-container .upper-container .colB .search_wrapper .search_wrap .search_dropdown_menu::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
 }
 header .header-container .upper-container .colB .search_wrapper .search_wrap .search_dropdown_menu .dropdown_wrap {
   padding: 15px 10px;
@@ -2519,6 +2559,7 @@ header .header-container .upper-container .colC > ul > li.my-account:hover .my-a
   opacity: 1;
 }
 header .header-container .upper-container .colC > ul > li.my-account .my-acnt-dropdown {
+  width: 170px;
   position: absolute;
   top: calc(100% + 10px);
   left: 50%;
@@ -2611,12 +2652,12 @@ header .header-container .upper-container .colC > ul > li a:not(.sm-block) {
   align-items: center;
   gap: 5px;
 }
-header .header-container .upper-container .colC > ul > li a svg {
+header .header-container .upper-container .colC > ul > li a svg, header .header-container .upper-container .colC > ul > li a img {
   width: 24px;
   height: 24px;
 }
 @media only screen and (max-width: 540px) {
-  header .header-container .upper-container .colC > ul > li a svg {
+  header .header-container .upper-container .colC > ul > li a svg, header .header-container .upper-container .colC > ul > li a img {
     width: 20px;
     height: 20px;
   }
@@ -2671,7 +2712,7 @@ header .header-container .lower-container > ul > li.hasDropdown .dropdown-menu {
   top: 100%;
   width: -moz-fit-content;
   width: fit-content;
-  height: 280px;
+  height: 450px;
   overflow-y: auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   left: 0%;
@@ -2841,6 +2882,10 @@ header .header-container .lower-container > ul > li > a {
   position: relative;
 }
 
+header.header-fixed {
+  transition: 0.5s ease;
+  height: var(--headerfixed);
+}
 @media only screen and (max-width: 991px) {
   header.header-fixed {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -3752,7 +3797,7 @@ header.header-shadow {
   font-family: "Rubik";
   font-size: 20px;
   line-height: 25.64px;
-  letter-spacing: 0.2em;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .model-full.add-address-pop .model-body .pilce .close svg {
@@ -4150,4 +4195,33 @@ footer .content .tag a {
 footer .content .tag a img {
   width: 65px;
   vertical-align: middle;
+}
+
+.thanks_banner {
+  margin-top: var(--headerheight);
+}
+.thanks_banner .bg {
+  height: calc(100vh - var(--headerfixed));
+}
+.thanks_banner .bg .banner-wrapper .content {
+  text-align: center;
+}
+.thanks_banner .bg .banner-wrapper .content figure {
+  width: 50px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.thanks_banner .bg .banner-wrapper .content figure img {
+  height: 100%;
+}
+.thanks_banner .bg .banner-wrapper .content h1 {
+  font-size: 60px;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1.5;
+}
+.thanks_banner .bg .banner-wrapper .content p {
+  font-size: 20px;
+  color: var(--white);
+  padding-bottom: 50px;
 }/*# sourceMappingURL=header.css.map */

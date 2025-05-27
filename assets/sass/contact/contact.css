@@ -12,27 +12,24 @@
     left: 100%;
   }
 }
-.contact-banner {
-  padding: 95px 0 70px;
+.contact_banner .bg {
+  height: calc(100vh - var(--headerfixed));
 }
-@media only screen and (max-width: 991px) {
-  .contact-banner {
-    padding: 80px 0 70px;
-  }
+.contact_banner .bg .banner-wrapper {
+  bottom: 10%;
+  top: unset;
 }
-@media only screen and (max-width: 768px) {
-  .contact-banner {
-    padding: 60px 0 50px;
-  }
+.contact_banner .bg .banner-wrapper .heading h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  color: var(--white);
+  padding-bottom: 0;
 }
-@media only screen and (max-width: 540px) {
-  .contact-banner {
-    padding: 50px 0 40px;
-  }
-}
-.contact-banner .content h1 {
-  color: #000;
-  letter-spacing: 4px;
+.contact_banner .bg .banner-wrapper .heading p {
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 400;
 }
 
 .contact-secA {
@@ -53,6 +50,20 @@
     padding-bottom: 0;
   }
 }
+.contact-secA .title {
+  padding-bottom: 50px;
+}
+.contact-secA .title img, .contact-secA .title svg {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.contact-secA .title h2 {
+  color: var(--black);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+}
 .contact-secA .flex {
   gap: 24px;
 }
@@ -65,6 +76,8 @@
 .contact-secA .col-md {
   flex: 1;
   padding: 44px 32px 55px;
+  background-color: #EDEDED;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -73,14 +86,15 @@
   padding-left: 30px;
 }
 .contact-secA .col-md .inf h6 {
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--primary);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--black);
   margin-bottom: 9px;
 }
 .contact-secA .col-md .inf a {
   display: block;
-  color: var(--text);
+  color: var(--black);
 }
 .contact-secA .col-md .inf a:not(:last-of-type) {
   margin-bottom: 12px;
@@ -89,33 +103,16 @@
   color: var(--primary);
 }
 
-.contact-secC {
-  padding: 67px 0 170px;
-}
-@media only screen and (max-width: 991px) {
-  .contact-secC {
-    padding: 55px 0 130px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .contact-secC {
-    padding: 40px 0 100px;
-  }
-}
-@media only screen and (max-width: 540px) {
-  .contact-secC {
-    padding: 50px 0;
-  }
-}
 .contact-secC .heading {
-  max-width: 415px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 54px;
 }
 .contact-secC .heading h3 {
   color: var(--black);
-  letter-spacing: 5px;
+  font-size: 36px;
+  font-weight: 500;
 }
 .contact-secC .heading .ico {
   width: 70px;
@@ -123,9 +120,6 @@
   margin-bottom: 38px;
   margin-left: auto;
   margin-right: auto;
-}
-.contact-secC .heading .ico svg path {
-  fill: #000;
 }
 .contact-secC .form-wrap {
   max-width: 622px;
@@ -144,4 +138,11 @@
 }
 .contact-secC .form-wrap .form .sbmt-grp .btn {
   --padding: 50px;
+}
+
+.contact-secD {
+  line-height: 0;
+}
+.contact-secD iframe {
+  filter: grayscale(1);
 }/*# sourceMappingURL=contact.css.map */
